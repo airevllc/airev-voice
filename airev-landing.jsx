@@ -591,12 +591,12 @@ export default function AIRevLanding() {
             >
               Join the Study
             </button>
-            <a
-              href="#how"
+            <button
+              onClick={() => window.scrollTo({ top: window.innerHeight * 0.75, behavior: "smooth" })}
               className="px-8 py-3.5 text-base font-semibold rounded-full border border-white/10 text-white/70 hover:border-green-400/30 hover:text-green-300 transition-all duration-300"
             >
-              See How It Works ↓
-            </a>
+              See More ↓
+            </button>
           </div>
 
           {/* Stats */}
