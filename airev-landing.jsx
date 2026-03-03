@@ -35,7 +35,7 @@ function Sparkles() {
             bottom: "-20px",
             width: p.size,
             height: p.size,
-            background: `radial-gradient(circle, rgba(167,243,100,${p.opacity}) 0%, transparent 70%)`,
+            background: `radial-gradient(circle, rgba(128,197,64,${p.opacity}) 0%, transparent 70%)`,
             animation: `floatUp ${p.duration}s ease-in-out ${p.delay}s infinite`,
           }}
         />
@@ -87,15 +87,15 @@ function BroomIcon({ className = "", ...props }) {
       {/* Neck */}
       <rect x="31" y="26" width="6" height="4" rx="3" fill="#F5D0A9" />
       {/* Body - fitted uniform dress */}
-      <path d="M26 30 C26 30 28 28 34 28 C40 28 42 30 42 30 L44 42 L43 58 C43 58 39 60 34 60 C29 60 25 58 25 58 L24 42 Z" fill="#A7F364" opacity="0.85" />
+      <path d="M26 30 C26 30 28 28 34 28 C40 28 42 30 42 30 L44 42 L43 58 C43 58 39 60 34 60 C29 60 25 58 25 58 L24 42 Z" fill="#80c540" opacity="0.85" />
       {/* Waist belt */}
-      <rect x="25" y="40" width="18" height="2.5" rx="1.2" fill="#8BD94E" opacity="0.7" />
-      <circle cx="34" cy="41.2" r="1.5" fill="#6BA830" opacity="0.5" />
+      <rect x="25" y="40" width="18" height="2.5" rx="1.2" fill="#5ea832" opacity="0.7" />
+      <circle cx="34" cy="41.2" r="1.5" fill="#2a8720" opacity="0.5" />
       {/* Collar - V-neck */}
       <path d="M28 30 L34 35 L40 30" stroke="white" strokeWidth="1" opacity="0.35" fill="none" strokeLinecap="round" />
       {/* Short sleeves */}
-      <path d="M26 30 L20 34 L22 36 L26 33" fill="#A7F364" opacity="0.75" />
-      <path d="M42 30 L48 34 L46 36 L42 33" fill="#A7F364" opacity="0.75" />
+      <path d="M26 30 L20 34 L22 36 L26 33" fill="#80c540" opacity="0.75" />
+      <path d="M42 30 L48 34 L46 36 L42 33" fill="#80c540" opacity="0.75" />
       {/* Arms - feminine, relaxed at sides */}
       <path d="M22 36 L18 50 L20 50" stroke="#F5D0A9" strokeWidth="2.5" strokeLinecap="round" fill="none" />
       <path d="M46 36 L50 50 L48 50" stroke="#F5D0A9" strokeWidth="2.5" strokeLinecap="round" fill="none" />
@@ -103,7 +103,7 @@ function BroomIcon({ className = "", ...props }) {
       <circle cx="19" cy="50.5" r="2" fill="#F5D0A9" />
       <circle cx="49" cy="50.5" r="2" fill="#F5D0A9" />
       {/* Skirt flare */}
-      <path d="M25 56 L22 70 C22 71 34 72 34 72 C34 72 46 71 46 70 L43 56" fill="#A7F364" opacity="0.7" />
+      <path d="M25 56 L22 70 C22 71 34 72 34 72 C34 72 46 71 46 70 L43 56" fill="#80c540" opacity="0.7" />
       {/* Legs */}
       <line x1="30" y1="70" x2="29" y2="76" stroke="#F5D0A9" strokeWidth="2.5" strokeLinecap="round" />
       <line x1="38" y1="70" x2="39" y2="76" stroke="#F5D0A9" strokeWidth="2.5" strokeLinecap="round" />
@@ -111,14 +111,14 @@ function BroomIcon({ className = "", ...props }) {
       <ellipse cx="28" cy="77" rx="3.5" ry="1.8" fill="#1A1A2E" opacity="0.6" />
       <ellipse cx="40" cy="77" rx="3.5" ry="1.8" fill="#1A1A2E" opacity="0.6" />
       {/* Voice waves - warm voice */}
-      <path d="M46 16 C48 14 48 18 46 16" stroke="#A7F364" strokeWidth="1" opacity="0.5" />
-      <path d="M49 14 C52 11 52 21 49 18" stroke="#A7F364" strokeWidth="0.8" opacity="0.3" />
-      <path d="M52 12 C56 8 56 24 52 20" stroke="#A7F364" strokeWidth="0.6" opacity="0.15" />
+      <path d="M46 16 C48 14 48 18 46 16" stroke="#80c540" strokeWidth="1" opacity="0.5" />
+      <path d="M49 14 C52 11 52 21 49 18" stroke="#80c540" strokeWidth="0.8" opacity="0.3" />
+      <path d="M52 12 C56 8 56 24 52 20" stroke="#80c540" strokeWidth="0.6" opacity="0.15" />
 
       {/* === BROOM - standing upright to the right, touching the floor === */}
       <g transform="translate(62, 2)">
         <rect x="0" y="0" width="3" height="50" rx="1.5" fill="#C8B88A" />
-        <path d="M-7 50 C-7 46 10 46 10 50 L11 70 C11 74 -8 74 -8 70 Z" fill="#A7F364" opacity="0.9" />
+        <path d="M-7 50 C-7 46 10 46 10 50 L11 70 C11 74 -8 74 -8 70 Z" fill="#80c540" opacity="0.9" />
         <path d="M-4 53 L-4 69" stroke="#0B1120" strokeWidth="1.2" strokeLinecap="round" opacity="0.25" />
         <path d="M1.5 52 L1.5 70" stroke="#0B1120" strokeWidth="1.2" strokeLinecap="round" opacity="0.25" />
         <path d="M7 53 L7 69" stroke="#0B1120" strokeWidth="1.2" strokeLinecap="round" opacity="0.25" />
@@ -132,17 +132,17 @@ function PrismIcon({ className = "", animated = false, ...props }) {
   return (
     <svg className={className} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       {/* Prism body */}
-      <path d="M32 6 L56 54 L8 54 Z" fill="rgba(167,243,100,0.08)" stroke="#A7F364" strokeWidth="1.5" strokeLinejoin="round" />
-      <path d="M32 18 L46 48 L18 48 Z" fill="rgba(167,243,100,0.05)" />
+      <path d="M32 6 L56 54 L8 54 Z" fill="rgba(128,197,64,0.08)" stroke="#80c540" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M32 18 L46 48 L18 48 Z" fill="rgba(128,197,64,0.05)" />
       {/* Incoming light */}
       <line x1="0" y1="38" x2="18" y2="38" stroke="white" strokeWidth="2.5" opacity="0.4" strokeLinecap="round" />
       {/* Refracted spectrum */}
-      <line x1="46" y1="26" x2="64" y2="16" stroke="#A7F364" strokeWidth="2" opacity="0.9" strokeLinecap="round" />
-      <line x1="47" y1="32" x2="64" y2="30" stroke="#64B5F3" strokeWidth="2" opacity="0.7" strokeLinecap="round" />
-      <line x1="47" y1="38" x2="64" y2="44" stroke="#F3B664" strokeWidth="2" opacity="0.7" strokeLinecap="round" />
-      <line x1="46" y1="44" x2="64" y2="58" stroke="#CB64F3" strokeWidth="2" opacity="0.5" strokeLinecap="round" />
+      <line x1="46" y1="26" x2="64" y2="16" stroke="#80c540" strokeWidth="2" opacity="0.9" strokeLinecap="round" />
+      <line x1="47" y1="32" x2="64" y2="30" stroke="#3b82f6" strokeWidth="2" opacity="0.7" strokeLinecap="round" />
+      <line x1="47" y1="38" x2="64" y2="44" stroke="#f59e0b" strokeWidth="2" opacity="0.7" strokeLinecap="round" />
+      <line x1="46" y1="44" x2="64" y2="58" stroke="#a855f7" strokeWidth="2" opacity="0.5" strokeLinecap="round" />
       {/* Center glow dot */}
-      <circle cx="32" cy="38" r="3" fill="#A7F364" opacity="0.3" />
+      <circle cx="32" cy="38" r="3" fill="#80c540" opacity="0.3" />
     </svg>
   );
 }
@@ -151,8 +151,8 @@ function PrismIcon({ className = "", animated = false, ...props }) {
 function AIRevGreenIcon({ className = "" }) {
   return (
     <svg className={className} viewBox="430 0 185 160" xmlns="http://www.w3.org/2000/svg">
-      <path d="m467.12 133.84c-.11-1.91 1-3.59 1.82-5.3 10-20.18 21.42-39.59 32.55-59.15q6-10.59 12.16-21.12a30.1 30.1 0 0 1 2.11-3.27c2.92-3.81 7.16-3.9 9.92 0 4 5.74 7.2 12 10.69 18.11 11.74 20.51 23.63 40.89 34.47 61.89a45.2 45.2 0 0 1 3.45 7.83 4.58 4.58 0 0 1 -1.11 4.85c-1.37 1.33-3.17 1.23-4.95.55a13.38 13.38 0 0 1 -4-2.86c-7.41-6.65-15.47-12.23-25-15.56-14.4-5-28.44-4.08-42.25 2.12a72.85 72.85 0 0 0 -19.18 13 15.27 15.27 0 0 1 -4.7 3.34c-3.55 1.33-6.1-.5-5.98-4.43z" fill="#6BC928"/>
-      <path d="m574.59 154.38c-7.21-.38-14.58-.68-21.71-2.83-1.69-.51-4.32-.83-4.17-2.73.08-1.13 3-.95 4.74-1 8.38-.45 16.73-1.13 24.75-3.87a30.5 30.5 0 0 0 6.26-2.92c3.67-2.26 4.7-4.31 3.83-8.55-2-9.62-5.54-18.74-9.62-27.61-11.25-24.5-26.16-46.67-42.62-67.87a112.65 112.65 0 0 0 -9.55-11.14c-4.42-4.37-7.77-4.32-12 .2-11.38 12.07-20.81 25.64-29.9 39.44-10.68 16.2-20.35 33-27 51.28a113 113 0 0 0 -4.6 14.22c-1.27 5.78-.37 7.67 4.82 10.64s11.2 4.2 17.15 4.94c5.12.64 10.28.89 15.42 1.37.77.07 1.92-.09 2.12.85.26 1.16-1 1.49-1.74 1.82a46.31 46.31 0 0 1 -12.34 2.84c-11.09 1.35-22.07 1.26-32.8-2.38a16.92 16.92 0 0 1 -3-1.26c-6.7-3.82-7.13-5.49-5.5-11.68 2.43-9.16 6.44-17.67 10.63-26.08 14.94-30 31.86-58.92 51.76-86 4.43-6 9-12 14.76-16.85 5.29-4.52 7.71-4.49 12.87.22 6.59 6 11.94 13.08 17.13 20.25 17.12 23.67 31.88 48.78 45.33 74.68a216.88 216.88 0 0 1 13.5 30.64c.32 1 .62 1.93.86 2.91 1.67 6.69.72 8.81-5.51 11.93-7.46 3.73-15.58 4.16-23.87 4.54z" fill="#A7F364"/>
+      <path d="m467.12 133.84c-.11-1.91 1-3.59 1.82-5.3 10-20.18 21.42-39.59 32.55-59.15q6-10.59 12.16-21.12a30.1 30.1 0 0 1 2.11-3.27c2.92-3.81 7.16-3.9 9.92 0 4 5.74 7.2 12 10.69 18.11 11.74 20.51 23.63 40.89 34.47 61.89a45.2 45.2 0 0 1 3.45 7.83 4.58 4.58 0 0 1 -1.11 4.85c-1.37 1.33-3.17 1.23-4.95.55a13.38 13.38 0 0 1 -4-2.86c-7.41-6.65-15.47-12.23-25-15.56-14.4-5-28.44-4.08-42.25 2.12a72.85 72.85 0 0 0 -19.18 13 15.27 15.27 0 0 1 -4.7 3.34c-3.55 1.33-6.1-.5-5.98-4.43z" fill="#1a8720"/>
+      <path d="m574.59 154.38c-7.21-.38-14.58-.68-21.71-2.83-1.69-.51-4.32-.83-4.17-2.73.08-1.13 3-.95 4.74-1 8.38-.45 16.73-1.13 24.75-3.87a30.5 30.5 0 0 0 6.26-2.92c3.67-2.26 4.7-4.31 3.83-8.55-2-9.62-5.54-18.74-9.62-27.61-11.25-24.5-26.16-46.67-42.62-67.87a112.65 112.65 0 0 0 -9.55-11.14c-4.42-4.37-7.77-4.32-12 .2-11.38 12.07-20.81 25.64-29.9 39.44-10.68 16.2-20.35 33-27 51.28a113 113 0 0 0 -4.6 14.22c-1.27 5.78-.37 7.67 4.82 10.64s11.2 4.2 17.15 4.94c5.12.64 10.28.89 15.42 1.37.77.07 1.92-.09 2.12.85.26 1.16-1 1.49-1.74 1.82a46.31 46.31 0 0 1 -12.34 2.84c-11.09 1.35-22.07 1.26-32.8-2.38a16.92 16.92 0 0 1 -3-1.26c-6.7-3.82-7.13-5.49-5.5-11.68 2.43-9.16 6.44-17.67 10.63-26.08 14.94-30 31.86-58.92 51.76-86 4.43-6 9-12 14.76-16.85 5.29-4.52 7.71-4.49 12.87.22 6.59 6 11.94 13.08 17.13 20.25 17.12 23.67 31.88 48.78 45.33 74.68a216.88 216.88 0 0 1 13.5 30.64c.32 1 .62 1.93.86 2.91 1.67 6.69.72 8.81-5.51 11.93-7.46 3.73-15.58 4.16-23.87 4.54z" fill="#1c8922"/>
     </svg>
   );
 }
@@ -162,7 +162,7 @@ function BroomOnlyIcon({ className = "" }) {
   return (
     <svg className={className} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="30" y="4" width="4" height="34" rx="2" fill="#C8B88A" stroke="#0B1120" strokeWidth="1.5" />
-      <path d="M22 38 C22 34 42 34 42 38 L44 56 C44 60 20 60 20 56 Z" fill="#A7F364" opacity="0.9" stroke="#0B1120" strokeWidth="1.5" />
+      <path d="M22 38 C22 34 42 34 42 38 L44 56 C44 60 20 60 20 56 Z" fill="#80c540" opacity="0.9" stroke="#0B1120" strokeWidth="1.5" />
       <path d="M26 42 L26 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
       <path d="M32 40 L32 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
       <path d="M38 42 L38 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
@@ -196,11 +196,11 @@ function PhoneMockup() {
             className="relative w-28 h-28 rounded-full flex items-center justify-center transition-all duration-500"
             style={{
               background: pulse
-                ? "radial-gradient(circle, #A7F364 0%, #6BC928 60%, #3A7A10 100%)"
-                : "radial-gradient(circle, #5A8A30 0%, #3A6A18 60%, #1A3A08 100%)",
+                ? "radial-gradient(circle, #80c540 0%, #1a8720 60%, #1a8720 100%)"
+                : "radial-gradient(circle, #1a8720 0%, #0f5e14 60%, #0a3d0a 100%)",
               boxShadow: pulse
-                ? "0 0 40px rgba(167,243,100,0.6), 0 0 80px rgba(167,243,100,0.2)"
-                : "0 0 20px rgba(167,243,100,0.15)",
+                ? "0 0 40px rgba(128,197,64,0.6), 0 0 80px rgba(128,197,64,0.2)"
+                : "0 0 20px rgba(128,197,64,0.15)",
             }}
           >
             <BroomOnlyIcon className="w-12 h-12" />
@@ -264,10 +264,10 @@ function PortraitLady({ className = "" }) {
       {/* Neck */}
       <rect x="37" y="40" width="6" height="5" rx="3" fill="#F5D0A9" />
       {/* Body - blouse */}
-      <path d="M30 45 C30 45 34 43 40 43 C46 43 50 45 50 45 L52 65 L28 65Z" fill="#F3B664" opacity="0.8" />
+      <path d="M30 45 C30 45 34 43 40 43 C46 43 50 45 50 45 L52 65 L28 65Z" fill="#f59e0b" opacity="0.8" />
       <path d="M34 45 L40 49 L46 45" stroke="white" strokeWidth="0.8" opacity="0.3" fill="none" />
       {/* Skirt */}
-      <path d="M28 65 L24 78 L56 78 L52 65Z" fill="#F3B664" opacity="0.6" />
+      <path d="M28 65 L24 78 L56 78 L52 65Z" fill="#f59e0b" opacity="0.6" />
     </svg>
   );
 }
@@ -291,7 +291,7 @@ function PortraitMan({ className = "" }) {
       {/* Neck */}
       <rect x="37" y="38" width="6" height="5" rx="3" fill="#D4A574" />
       {/* Body - shirt + tie */}
-      <path d="M28 43 C28 43 34 41 40 41 C46 41 52 43 52 43 L54 65 L26 65Z" fill="#64B5F3" opacity="0.7" />
+      <path d="M28 43 C28 43 34 41 40 41 C46 41 52 43 52 43 L54 65 L26 65Z" fill="#3b82f6" opacity="0.7" />
       <path d="M38 43 L40 55 L42 43" fill="#1A1A2E" opacity="0.4" />
       {/* Suit jacket */}
       <path d="M26 65 L24 78 L56 78 L54 65Z" fill="#2A3A5C" opacity="0.7" />
@@ -466,29 +466,29 @@ export default function AIRevLanding() {
           75% { transform: rotate(2deg) scale(1.02); }
         }
         .shimmer-text {
-          background: linear-gradient(90deg, #A7F364, #6BC928, #A7F364, #D4FF9E);
+          background: linear-gradient(90deg, #80c540, #1a8720, #80c540, #b8e672);
           background-size: 200% 100%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           animation: shimmer 4s linear infinite;
         }
         .prism-text {
-          background: linear-gradient(90deg, #A7F364, #64B5F3, #F3B664, #CB64F3, #A7F364);
+          background: linear-gradient(90deg, #80c540, #3b82f6, #f59e0b, #a855f7, #80c540);
           background-size: 300% 100%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           animation: shimmer 6s linear infinite;
         }
         .prism-text-subtle {
-          background: linear-gradient(90deg, #64B5F3, #CB64F3, #64B5F3);
+          background: linear-gradient(90deg, #3b82f6, #a855f7, #3b82f6);
           background-size: 200% 100%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           animation: shimmer 5s linear infinite;
         }
         @keyframes prismGlow {
-          0%, 100% { box-shadow: 0 0 30px rgba(100,181,243,0.15), 0 0 60px rgba(203,100,243,0.05); }
-          50% { box-shadow: 0 0 40px rgba(203,100,243,0.2), 0 0 80px rgba(100,181,243,0.08); }
+          0%, 100% { box-shadow: 0 0 30px rgba(59,130,246,0.15), 0 0 60px rgba(168,85,247,0.05); }
+          50% { box-shadow: 0 0 40px rgba(168,85,247,0.2), 0 0 80px rgba(59,130,246,0.08); }
         }
         .stagger-1 { animation: fadeSlideUp 0.8s ease forwards 0.1s; opacity: 0; }
         .stagger-2 { animation: fadeSlideUp 0.8s ease forwards 0.25s; opacity: 0; }
@@ -501,7 +501,7 @@ export default function AIRevLanding() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: scrollY > 50 ? "rgba(11,17,32,0.85)" : "transparent",
+          background: scrollY > 50 ? "rgba(5,14,28,0.85)" : "transparent",
           backdropFilter: scrollY > 50 ? "blur(20px)" : "none",
           borderBottom: scrollY > 50 ? "1px solid rgba(255,255,255,0.05)" : "none",
         }}
@@ -520,7 +520,7 @@ export default function AIRevLanding() {
             <button
               onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
               className="px-5 py-2 text-sm font-semibold rounded-full text-gray-950 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/20"
-              style={{ background: "linear-gradient(135deg, #A7F364, #6BC928)" }}
+              style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
             >
               Join the Study
             </button>
@@ -536,7 +536,7 @@ export default function AIRevLanding() {
         </div>
         {menuOpen && (
           <div className="md:hidden bg-gray-950/95 backdrop-blur-xl border-t border-white/5 px-6 py-4 flex flex-col gap-3">
-            <button onClick={() => { setPage("partner"); setMenuOpen(false); window.scrollTo(0, 0); }} className="text-sm font-semibold text-gray-950 text-center py-2 rounded-full" style={{ background: "linear-gradient(135deg, #A7F364, #6BC928)" }}>Join the Study</button>
+            <button onClick={() => { setPage("partner"); setMenuOpen(false); window.scrollTo(0, 0); }} className="text-sm font-semibold text-gray-950 text-center py-2 rounded-full" style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}>Join the Study</button>
           </div>
         )}
       </nav>
@@ -549,7 +549,7 @@ export default function AIRevLanding() {
         <div
           className="absolute w-96 h-96 rounded-full opacity-20 blur-3xl"
           style={{
-            background: "radial-gradient(circle, #A7F364, transparent)",
+            background: "radial-gradient(circle, #80c540, transparent)",
             top: "10%",
             left: "15%",
             transform: `translate(${scrollY * 0.02}px, ${scrollY * 0.01}px)`,
@@ -558,7 +558,7 @@ export default function AIRevLanding() {
         <div
           className="absolute w-72 h-72 rounded-full opacity-10 blur-3xl"
           style={{
-            background: "radial-gradient(circle, #6BC928, transparent)",
+            background: "radial-gradient(circle, #1a8720, transparent)",
             bottom: "20%",
             right: "10%",
             transform: `translate(${-scrollY * 0.015}px, ${scrollY * 0.02}px)`,
@@ -587,7 +587,7 @@ export default function AIRevLanding() {
             <button
               onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
               className="px-8 py-3.5 text-base font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/25 hover:scale-105"
-              style={{ background: "linear-gradient(135deg, #A7F364, #6BC928)" }}
+              style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
             >
               Join the Study
             </button>
@@ -675,7 +675,7 @@ export default function AIRevLanding() {
                       <span className="text-white/25 text-[8px] font-mono tracking-widest uppercase">link</span>
                       <div className="w-1 h-1 rounded-full bg-purple-400 animate-pulse" style={{ animationDelay: "0.5s" }} />
                     </div>
-                    <div className="absolute inset-0 rounded-full opacity-20 animate-ping" style={{ background: "linear-gradient(90deg, rgba(167,243,100,0.2), rgba(203,100,243,0.2))", animationDuration: "3s" }} />
+                    <div className="absolute inset-0 rounded-full opacity-20 animate-ping" style={{ background: "linear-gradient(90deg, rgba(128,197,64,0.2), rgba(168,85,247,0.2))", animationDuration: "3s" }} />
                   </div>
                   <div className="w-8 h-px bg-gradient-to-r from-purple-400/10 to-purple-400/40" />
                 </div>
@@ -832,8 +832,8 @@ export default function AIRevLanding() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: "Bestie", Portrait: PortraitLady, tone: "Warm • Conversational", desc: "Chatty, warm, makes note-taking feel like gossip with a friend.", color: "#F3B664" },
-              { name: "Executive", Portrait: PortraitMan, tone: "Confident • Structured", desc: "Professional, polished, asks sharp questions. Boardroom energy.", color: "#64B5F3" },
+              { name: "Bestie", Portrait: PortraitLady, tone: "Warm • Conversational", desc: "Chatty, warm, makes note-taking feel like gossip with a friend.", color: "#f59e0b" },
+              { name: "Executive", Portrait: PortraitMan, tone: "Confident • Structured", desc: "Professional, polished, asks sharp questions. Boardroom energy.", color: "#3b82f6" },
               { name: "Analyst", Portrait: PortraitScientist, tone: "Precise • Insightful", desc: "Data-driven, methodical, spots patterns in your pipeline you'd miss.", color: "#9CA3AF" },
               { name: "Closer", Portrait: PortraitSpark, tone: "Direct • Urgent", desc: "No-nonsense, fast-paced, cuts to what matters for the deal.", color: "#F36464" },
             ].map((v, i) => (
@@ -872,7 +872,7 @@ export default function AIRevLanding() {
       <section id="prism" className="relative py-32 px-6 overflow-hidden">
         {/* Subtle prism-colored gradient background */}
         <div className="absolute inset-0 opacity-[0.04]" style={{
-          background: "linear-gradient(135deg, #64B5F3 0%, #CB64F3 30%, #F3B664 60%, #A7F364 100%)",
+          background: "linear-gradient(135deg, #3b82f6 0%, #a855f7 30%, #f59e0b 60%, #80c540 100%)",
         }} />
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -896,21 +896,21 @@ export default function AIRevLanding() {
             {/* Prism insight cards */}
             {[
               {
-                color: "#A7F364",
+                color: "#80c540",
                 title: "Pattern Recognition",
                 stat: "100K+",
                 statLabel: "sales notes analyzed",
                 desc: "Prism has seen every kind of deal. It recognizes the patterns that separate closed-won from closed-lost - and tells the Cleaner what to capture.",
               },
               {
-                color: "#64B5F3",
+                color: "#3b82f6",
                 title: "Your Data, Your Playbook",
                 stat: "∞",
                 statLabel: "custom adaptability",
                 desc: "Prism adapts to your internal datasets and processes - or starts with an industry template. Either way, it learns how your team wins and tunes itself accordingly.",
               },
               {
-                color: "#CB64F3",
+                color: "#a855f7",
                 title: "Predict & Prescribe",
                 stat: "92%",
                 statLabel: "close-rate accuracy",
@@ -1063,7 +1063,7 @@ export default function AIRevLanding() {
                   </div>
                   {/* SVG visual notebook - polished, lines from node edges */}
                   <svg className="w-full" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0" y="0" width="560" height="320" rx="12" fill="#080E1C" />
+                    <rect x="0" y="0" width="560" height="320" rx="12" fill="#050e1c" />
                     {/* Grid dots - notebook feel */}
                     {Array.from({length: 20}).map((_, r) => Array.from({length: 30}).map((_, c) => (
                       <circle key={`${r}-${c}`} cx={18 + c * 18} cy={16 + r * 16} r="0.4" fill="white" opacity="0.06" />
@@ -1071,17 +1071,17 @@ export default function AIRevLanding() {
 
                     {/* ═══ Connections: edge-to-edge from center ellipse to each node ═══ */}
                     {/* Center→Austin (upper-left exit → right edge of rect) */}
-                    <path d="M228 85 C198 76 170 67 150 63" stroke="#A7F364" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                    <path d="M228 85 C198 76 170 67 150 63" stroke="#80c540" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
                     {/* Center→Hail risk (lower-left exit → upper-right edge of ellipse) */}
-                    <path d="M229 115 C198 126 160 138 122 146" stroke="#64B5F3" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                    <path d="M229 115 C198 126 160 138 122 146" stroke="#3b82f6" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
                     {/* Center→Umbrella (bottom-left exit → top edge of rect) */}
-                    <path d="M262 131 C254 168 228 208 199 240" stroke="#F3B664" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                    <path d="M262 131 C254 168 228 208 199 240" stroke="#f59e0b" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
                     {/* Center→Hail comp (upper-right exit → left edge of rect) */}
                     <path d="M332 86 C356 79 380 72 400 68" stroke="#F36464" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
                     {/* Center→Inspection (lower-right exit → upper-left edge of ellipse) */}
-                    <path d="M328 118 C358 130 396 146 427 155" stroke="#64F3C8" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                    <path d="M328 118 C358 130 396 146 427 155" stroke="#14b8a6" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
                     {/* Center→Prism (bottom-right exit → top edge of rect) */}
-                    <path d="M307 129 C328 168 382 218 420 250" stroke="#CB64F3" strokeWidth="1.2" opacity="0.15" strokeLinecap="round" />
+                    <path d="M307 129 C328 168 382 218 420 250" stroke="#a855f7" strokeWidth="1.2" opacity="0.15" strokeLinecap="round" />
 
                     {/* Cross-links between nodes - dashed, edge-to-edge */}
                     {/* Austin bottom → Hail risk top */}
@@ -1089,26 +1089,26 @@ export default function AIRevLanding() {
                     {/* Hail comp bottom → Inspection top */}
                     <path d="M470 73 C470 100 470 130 470 150" stroke="white" strokeWidth="0.6" opacity="0.08" strokeDasharray="3 4" />
                     {/* Umbrella right → Prism left */}
-                    <path d="M245 259 C280 263 310 268 340 272" stroke="#CB64F3" strokeWidth="0.6" opacity="0.1" strokeDasharray="3 4" />
+                    <path d="M245 259 C280 263 310 268 340 272" stroke="#a855f7" strokeWidth="0.6" opacity="0.1" strokeDasharray="3 4" />
 
                     {/* ═══ CENTER: Thompson ═══ */}
-                    <ellipse cx="280" cy="100" rx="58" ry="32" fill="#A7F364" fillOpacity="0.08" stroke="#A7F364" strokeWidth="2" strokeDasharray="4 3" opacity="0.4" />
-                    <text x="280" y="96" textAnchor="middle" fill="#A7F364" fontSize="15" fontWeight="bold" opacity="0.9" style={{fontFamily:"'Syne',sans-serif"}}>🏠 Thompson</text>
-                    <text x="280" y="114" textAnchor="middle" fill="#A7F364" fontSize="9" opacity="0.4">Home + Auto · $4.2K</text>
+                    <ellipse cx="280" cy="100" rx="58" ry="32" fill="#80c540" fillOpacity="0.08" stroke="#80c540" strokeWidth="2" strokeDasharray="4 3" opacity="0.4" />
+                    <text x="280" y="96" textAnchor="middle" fill="#80c540" fontSize="15" fontWeight="bold" opacity="0.9" style={{fontFamily:"'Syne',sans-serif"}}>🏠 Thompson</text>
+                    <text x="280" y="114" textAnchor="middle" fill="#80c540" fontSize="9" opacity="0.4">Home + Auto · $4.2K</text>
 
                     {/* ═══ Austin→Denver (top-left) ═══ */}
-                    <rect x="40" y="28" width="110" height="40" rx="8" fill="#A7F364" fillOpacity="0.05" stroke="#A7F364" strokeWidth="1" opacity="0.3" />
+                    <rect x="40" y="28" width="110" height="40" rx="8" fill="#80c540" fillOpacity="0.05" stroke="#80c540" strokeWidth="1" opacity="0.3" />
                     <text x="95" y="46" textAnchor="middle" fill="white" fontSize="10" opacity="0.7">✈️ Austin→Denver</text>
-                    <text x="95" y="60" textAnchor="middle" fill="#A7F364" fontSize="8" opacity="0.35">closing Mar 18</text>
+                    <text x="95" y="60" textAnchor="middle" fill="#80c540" fontSize="8" opacity="0.35">closing Mar 18</text>
                     {/* ═══ Hail risk (left) ═══ */}
-                    <ellipse cx="75" cy="160" rx="60" ry="22" fill="#64B5F3" fillOpacity="0.05" stroke="#64B5F3" strokeWidth="1.2" opacity="0.3" />
+                    <ellipse cx="75" cy="160" rx="60" ry="22" fill="#3b82f6" fillOpacity="0.05" stroke="#3b82f6" strokeWidth="1.2" opacity="0.3" />
                     <text x="75" y="157" textAnchor="middle" fill="white" fontSize="11" opacity="0.7">⚡ Hail risk</text>
-                    <text x="75" y="172" textAnchor="middle" fill="#64B5F3" fontSize="7" opacity="0.3">prev claim TX</text>
+                    <text x="75" y="172" textAnchor="middle" fill="#3b82f6" fontSize="7" opacity="0.3">prev claim TX</text>
 
                     {/* ═══ Umbrella (bottom-left) ═══ */}
-                    <rect x="130" y="240" width="115" height="38" rx="19" fill="#F3B664" fillOpacity="0.05" stroke="#F3B664" strokeWidth="1.2" opacity="0.3" />
+                    <rect x="130" y="240" width="115" height="38" rx="19" fill="#f59e0b" fillOpacity="0.05" stroke="#f59e0b" strokeWidth="1.2" opacity="0.3" />
                     <text x="188" y="256" textAnchor="middle" fill="white" fontSize="11" opacity="0.7">☂️ Umbrella $1M</text>
-                    <text x="188" y="270" textAnchor="middle" fill="#F3B664" fontSize="8" opacity="0.3">bundle discount?</text>
+                    <text x="188" y="270" textAnchor="middle" fill="#f59e0b" fontSize="8" opacity="0.3">bundle discount?</text>
 
                     {/* ═══ Hail comp (top-right) ═══ */}
                     <rect x="400" y="25" width="140" height="48" rx="8" fill="#F36464" fillOpacity="0.06" stroke="#F36464" strokeWidth="1.2" opacity="0.35" />
@@ -1116,23 +1116,23 @@ export default function AIRevLanding() {
                     <text x="470" y="58" textAnchor="middle" fill="#F36464" fontSize="8" opacity="0.4">📧 by Wednesday</text>
 
                     {/* ═══ Inspection (mid-right) ═══ */}
-                    <ellipse cx="470" cy="172" rx="65" ry="22" fill="#64F3C8" fillOpacity="0.04" stroke="#64F3C8" strokeWidth="1" opacity="0.3" />
+                    <ellipse cx="470" cy="172" rx="65" ry="22" fill="#14b8a6" fillOpacity="0.04" stroke="#14b8a6" strokeWidth="1" opacity="0.3" />
                     <text x="470" y="169" textAnchor="middle" fill="white" fontSize="10" opacity="0.6">② Inspection 📋</text>
-                    <text x="470" y="183" textAnchor="middle" fill="#64F3C8" fontSize="7" opacity="0.3">photos or PDF</text>
+                    <text x="470" y="183" textAnchor="middle" fill="#14b8a6" fontSize="7" opacity="0.3">photos or PDF</text>
 
                     {/* ═══ Prism insight (bottom-right) ═══ */}
-                    <rect x="340" y="250" width="200" height="44" rx="8" fill="#CB64F3" fillOpacity="0.04" stroke="#CB64F3" strokeWidth="1" strokeDasharray="4 2" opacity="0.25" />
-                    <text x="440" y="268" textAnchor="middle" fill="#CB64F3" fontSize="9" opacity="0.6">🔮 Prism: 48hr = 82% close</text>
-                    <text x="440" y="283" textAnchor="middle" fill="#CB64F3" fontSize="7" opacity="0.3">prioritize hail comparison</text>
-                    <text x="545" y="262" fill="#CB64F3" fontSize="8" opacity="0.12">✨</text>
+                    <rect x="340" y="250" width="200" height="44" rx="8" fill="#a855f7" fillOpacity="0.04" stroke="#a855f7" strokeWidth="1" strokeDasharray="4 2" opacity="0.25" />
+                    <text x="440" y="268" textAnchor="middle" fill="#a855f7" fontSize="9" opacity="0.6">🔮 Prism: 48hr = 82% close</text>
+                    <text x="440" y="283" textAnchor="middle" fill="#a855f7" fontSize="7" opacity="0.3">prioritize hail comparison</text>
+                    <text x="545" y="262" fill="#a855f7" fontSize="8" opacity="0.12">✨</text>
 
                     {/* Junction dots at center ellipse edge exits */}
-                    <circle cx="228" cy="85" r="2.5" fill="#A7F364" opacity="0.3" />
-                    <circle cx="229" cy="115" r="2.5" fill="#64B5F3" opacity="0.25" />
-                    <circle cx="262" cy="131" r="2.5" fill="#F3B664" opacity="0.25" />
+                    <circle cx="228" cy="85" r="2.5" fill="#80c540" opacity="0.3" />
+                    <circle cx="229" cy="115" r="2.5" fill="#3b82f6" opacity="0.25" />
+                    <circle cx="262" cy="131" r="2.5" fill="#f59e0b" opacity="0.25" />
                     <circle cx="332" cy="86" r="2.5" fill="#F36464" opacity="0.3" />
-                    <circle cx="328" cy="118" r="2.5" fill="#64F3C8" opacity="0.25" />
-                    <circle cx="307" cy="129" r="2.5" fill="#CB64F3" opacity="0.2" />
+                    <circle cx="328" cy="118" r="2.5" fill="#14b8a6" opacity="0.25" />
+                    <circle cx="307" cy="129" r="2.5" fill="#a855f7" opacity="0.2" />
                   </svg>
                 </div>
               );
@@ -1148,7 +1148,7 @@ export default function AIRevLanding() {
                     No loading, no waiting. After an in-person meeting, press and talk. For virtual meetings, AI REV joins the call and handles the rest automatically.
                   </p>
                   <div className="flex-1 flex flex-col items-center justify-center py-6">
-                    <div className="relative w-24 h-24 rounded-full flex items-center justify-center" style={{ background: "radial-gradient(circle, #5A8A30 0%, #3A6A18 60%, #1A3A08 100%)", boxShadow: "0 0 30px rgba(167,243,100,0.15)" }}>
+                    <div className="relative w-24 h-24 rounded-full flex items-center justify-center" style={{ background: "radial-gradient(circle, #1a8720 0%, #0f5e14 60%, #0a3d0a 100%)", boxShadow: "0 0 30px rgba(128,197,64,0.15)" }}>
                       <BroomOnlyIcon className="w-10 h-10" />
                     </div>
                     <p className="mt-3 text-green-400/50 text-[10px] font-mono tracking-wider">tap → talk → done</p>
@@ -1327,7 +1327,7 @@ export default function AIRevLanding() {
           <button
             onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
             className="px-10 py-4 text-lg font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/25 hover:scale-105"
-            style={{ background: "linear-gradient(135deg, #A7F364, #6BC928)" }}
+            style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
           >
             Join the Study
           </button>
@@ -1437,7 +1437,7 @@ export default function AIRevLanding() {
               <a
                 href="mailto:marek@airev.us?subject=Design Partner Program"
                 className="inline-block px-10 py-4 text-lg font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/25 hover:scale-105"
-                style={{ background: "linear-gradient(135deg, #A7F364, #6BC928)" }}
+                style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
               >
                 Apply to Join
               </a>
