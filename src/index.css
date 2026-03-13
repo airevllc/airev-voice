@@ -3,3 +3,7 @@
   --color-green-400: #80c540;
   --color-green-300: #a3d870;
 }
+
+html, body {
+  background-color: #000;
+}
