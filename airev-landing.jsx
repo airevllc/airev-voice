@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 
+import PrismLogo from "./assets/prism_green_small transparent.png";
+import PhoneFrame from "./assets/phone frame small.png";
+
 // ─── Utility: Intersection Observer Hook ───
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
@@ -151,8 +154,8 @@ function PrismIcon({ className = "", animated = false, ...props }) {
 function AIRevGreenIcon({ className = "" }) {
   return (
     <svg className={className} viewBox="430 0 185 160" xmlns="http://www.w3.org/2000/svg">
-      <path d="m467.12 133.84c-.11-1.91 1-3.59 1.82-5.3 10-20.18 21.42-39.59 32.55-59.15q6-10.59 12.16-21.12a30.1 30.1 0 0 1 2.11-3.27c2.92-3.81 7.16-3.9 9.92 0 4 5.74 7.2 12 10.69 18.11 11.74 20.51 23.63 40.89 34.47 61.89a45.2 45.2 0 0 1 3.45 7.83 4.58 4.58 0 0 1 -1.11 4.85c-1.37 1.33-3.17 1.23-4.95.55a13.38 13.38 0 0 1 -4-2.86c-7.41-6.65-15.47-12.23-25-15.56-14.4-5-28.44-4.08-42.25 2.12a72.85 72.85 0 0 0 -19.18 13 15.27 15.27 0 0 1 -4.7 3.34c-3.55 1.33-6.1-.5-5.98-4.43z" fill="#1a8720"/>
-      <path d="m574.59 154.38c-7.21-.38-14.58-.68-21.71-2.83-1.69-.51-4.32-.83-4.17-2.73.08-1.13 3-.95 4.74-1 8.38-.45 16.73-1.13 24.75-3.87a30.5 30.5 0 0 0 6.26-2.92c3.67-2.26 4.7-4.31 3.83-8.55-2-9.62-5.54-18.74-9.62-27.61-11.25-24.5-26.16-46.67-42.62-67.87a112.65 112.65 0 0 0 -9.55-11.14c-4.42-4.37-7.77-4.32-12 .2-11.38 12.07-20.81 25.64-29.9 39.44-10.68 16.2-20.35 33-27 51.28a113 113 0 0 0 -4.6 14.22c-1.27 5.78-.37 7.67 4.82 10.64s11.2 4.2 17.15 4.94c5.12.64 10.28.89 15.42 1.37.77.07 1.92-.09 2.12.85.26 1.16-1 1.49-1.74 1.82a46.31 46.31 0 0 1 -12.34 2.84c-11.09 1.35-22.07 1.26-32.8-2.38a16.92 16.92 0 0 1 -3-1.26c-6.7-3.82-7.13-5.49-5.5-11.68 2.43-9.16 6.44-17.67 10.63-26.08 14.94-30 31.86-58.92 51.76-86 4.43-6 9-12 14.76-16.85 5.29-4.52 7.71-4.49 12.87.22 6.59 6 11.94 13.08 17.13 20.25 17.12 23.67 31.88 48.78 45.33 74.68a216.88 216.88 0 0 1 13.5 30.64c.32 1 .62 1.93.86 2.91 1.67 6.69.72 8.81-5.51 11.93-7.46 3.73-15.58 4.16-23.87 4.54z" fill="#1c8922"/>
+      <path d="m467.12 133.84c-.11-1.91 1-3.59 1.82-5.3 10-20.18 21.42-39.59 32.55-59.15q6-10.59 12.16-21.12a30.1 30.1 0 0 1 2.11-3.27c2.92-3.81 7.16-3.9 9.92 0 4 5.74 7.2 12 10.69 18.11 11.74 20.51 23.63 40.89 34.47 61.89a45.2 45.2 0 0 1 3.45 7.83 4.58 4.58 0 0 1 -1.11 4.85c-1.37 1.33-3.17 1.23-4.95.55a13.38 13.38 0 0 1 -4-2.86c-7.41-6.65-15.47-12.23-25-15.56-14.4-5-28.44-4.08-42.25 2.12a72.85 72.85 0 0 0 -19.18 13 15.27 15.27 0 0 1 -4.7 3.34c-3.55 1.33-6.1-.5-5.98-4.43z" fill="#1a8720" />
+      <path d="m574.59 154.38c-7.21-.38-14.58-.68-21.71-2.83-1.69-.51-4.32-.83-4.17-2.73.08-1.13 3-.95 4.74-1 8.38-.45 16.73-1.13 24.75-3.87a30.5 30.5 0 0 0 6.26-2.92c3.67-2.26 4.7-4.31 3.83-8.55-2-9.62-5.54-18.74-9.62-27.61-11.25-24.5-26.16-46.67-42.62-67.87a112.65 112.65 0 0 0 -9.55-11.14c-4.42-4.37-7.77-4.32-12 .2-11.38 12.07-20.81 25.64-29.9 39.44-10.68 16.2-20.35 33-27 51.28a113 113 0 0 0 -4.6 14.22c-1.27 5.78-.37 7.67 4.82 10.64s11.2 4.2 17.15 4.94c5.12.64 10.28.89 15.42 1.37.77.07 1.92-.09 2.12.85.26 1.16-1 1.49-1.74 1.82a46.31 46.31 0 0 1 -12.34 2.84c-11.09 1.35-22.07 1.26-32.8-2.38a16.92 16.92 0 0 1 -3-1.26c-6.7-3.82-7.13-5.49-5.5-11.68 2.43-9.16 6.44-17.67 10.63-26.08 14.94-30 31.86-58.92 51.76-86 4.43-6 9-12 14.76-16.85 5.29-4.52 7.71-4.49 12.87.22 6.59 6 11.94 13.08 17.13 20.25 17.12 23.67 31.88 48.78 45.33 74.68a216.88 216.88 0 0 1 13.5 30.64c.32 1 .62 1.93.86 2.91 1.67 6.69.72 8.81-5.51 11.93-7.46 3.73-15.58 4.16-23.87 4.54z" fill="#1c8922" />
     </svg>
   );
 }
@@ -163,55 +166,62 @@ function BroomOnlyIcon({ className = "" }) {
     <svg className={className} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="30" y="4" width="4" height="34" rx="2" fill="#C8B88A" stroke="#0B1120" strokeWidth="1.5" />
       <path d="M22 38 C22 34 42 34 42 38 L44 56 C44 60 20 60 20 56 Z" fill="#80c540" opacity="0.9" stroke="#0B1120" strokeWidth="1.5" />
-      <path d="M26 42 L26 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
-      <path d="M32 40 L32 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
-      <path d="M38 42 L38 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
+      <path d="M26 42 L26 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
+      <path d="M32 40 L32 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
+      <path d="M38 42 L38 56" stroke="#0B1120" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
     </svg>
   );
 }
 
-// ─── Phone Mockup ───
+// ─── Demo Widget ───
 function PhoneMockup() {
-  const [pulse, setPulse] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => setPulse(p => !p), 3000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <div className="relative mx-auto" style={{ width: 220, height: 440 }}>
-      {/* Phone frame */}
-      <div className="absolute inset-0 rounded-3xl border-2 border-white/10 bg-gradient-to-b from-gray-900 to-gray-950 shadow-2xl overflow-hidden">
-        {/* Notch */}
-        <div className="mx-auto mt-2 w-20 h-5 bg-black rounded-full" />
-        {/* Screen */}
-        <div className="flex flex-col items-center justify-center h-full px-4 -mt-4">
-          <div className="flex flex-col items-center mb-6">
-            <AIRevGreenIcon className="w-8 h-8" />
-            <span className="text-xs font-bold tracking-tight mt-1" style={{ fontFamily: "'Syne', sans-serif" }}>AI <span className="text-green-400">REV</span></span>
-          </div>
-          {/* The Button - broom only */}
-          <button
-            className="relative w-28 h-28 rounded-full flex items-center justify-center transition-all duration-500"
-            style={{
-              background: pulse
-                ? "radial-gradient(circle, #80c540 0%, #1a8720 60%, #1a8720 100%)"
-                : "radial-gradient(circle, #1a8720 0%, #0f5e14 60%, #0a3d0a 100%)",
-              boxShadow: pulse
-                ? "0 0 40px rgba(128,197,64,0.6), 0 0 80px rgba(128,197,64,0.2)"
-                : "0 0 20px rgba(128,197,64,0.15)",
-            }}
-          >
-            <BroomOnlyIcon className="w-12 h-12" />
-            {pulse && (
-              <div className="absolute inset-0 rounded-full border-2 border-green-400/40 animate-ping" />
-            )}
-          </button>
-          <p className="mt-4 text-green-300 text-xs font-semibold tracking-wider animate-pulse">
-            {pulse ? "LISTENING..." : "TAP TO CLEAN"}
-          </p>
+    <div className="relative mx-auto" style={{ scale: 1.15, marginTop: "30px", right: "100px", position: "relative" }}>
+      <div className="relative overflow-hidden rounded-3xl border-0 border-white/10 shadow-2xl mx-auto" style={{ width: 270, height: 550, background: "#000", position: "relative", zIndex: 1 }}>
+        <img src={PhoneFrame} alt="Phone Frame" className="absolute top-0 left-0 w-full h-full pointer-events-none" style={{ width: 270, height: 550, zIndex: 2 }} />
+        <iframe
+          srcDoc={`<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#000;width:100%;height:100%;overflow:hidden;}[data-variant=compact].sheet{max-height:100% !important;}</style></head><body><elevenlabs-convai agent-id="agent_6401kfykap5re688ev8qqvsvpafk"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"><\/script></body></html>`}
+          className="w-full border-0"
+          style={{ background: "#000", height: "calc(100% + 10px + 90px)", marginTop: "-88px" }}
+          allow="microphone"
+          title="AI Rev Demo"
+        />
+        <div style={{ position: "absolute", top: '60px', left: '1px', right: '1px', width: '100%', height: 1.5, background: "#191919" }}></div>
+        {/* Status bar: 5G + signal bars */}
+        <div style={{ position: "absolute", top: 27, right: 25, display: "flex", alignItems: "end", gap: 4, background: "black", padding: "2px 4px" }}>
+          <span style={{ color: "#999", fontSize: 6, fontWeight: 600, marginRight: 4, lineHeight: 1, position: "absolute", top: "1px", left: "1px" }}>5G</span>
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none">
+            <rect x="0" y="9" width="2.5" height="3" rx="0.5" fill="#999" />
+            <rect x="4" y="6" width="2.5" height="6" rx="0.5" fill="#999" />
+            <rect x="8" y="3" width="2.5" height="9" rx="0.5" fill="#999" />
+            <rect x="12" y="0" width="2.5" height="12" rx="0.5" fill="#999" />
+          </svg>
         </div>
+      </div>
+      {/* Arrow + CTA */}
+      <div className="absolute top-1/3 right-[-20px] flex flex-col items-start">
+        <span className="text-green-400 font-bold text-sm tracking-wide whitespace-nowrap ml-4" style={{ fontFamily: "'Syne', sans-serif" }}>
+          Try the demo call
+        </span>
+        <svg width="130" height="120" viewBox="-15 -5 145 125" fill="none" className="mt-1" style={{ transform: "scaleX(-1) rotate(-90deg)" }}>
+          {/* Wide sweeping curve from top-right to bottom-left */}
+          <path
+            d="M120 2C95 0 65 5 45 20C25 38 12 60 5 85C3 92 2 100 2 105"
+            stroke="#81c540"
+            strokeWidth="3"
+            strokeLinecap="round"
+            fill="none"
+          />
+          {/* Arrowhead pointing down-left */}
+          <path
+            d="M-8 97L2 107L12 97"
+            stroke="#81c540"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </svg>
       </div>
     </div>
   );
@@ -221,18 +231,11 @@ function PhoneMockup() {
 
 // ─── Feature Card ───
 function FeatureCard({ icon, title, desc, delay = 0 }) {
-  const [ref, inView] = useInView(0.1);
   return (
     <div
-      ref={ref}
-      className="group relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-700 hover:border-green-400/20 hover:bg-green-400/[0.03]"
-      style={{
-        opacity: inView ? 1 : 0,
-        transform: inView ? "translateY(0)" : "translateY(40px)",
-        transitionDelay: `${delay}ms`,
-      }}
+      className="relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm"
     >
-      <div className="text-3xl mb-3 transition-transform duration-300 group-hover:scale-110">{icon}</div>
+      <div className="text-3xl mb-3">{icon}</div>
       <h3 className="text-white font-bold text-lg mb-2">{title}</h3>
       <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
     </div>
@@ -432,7 +435,7 @@ export default function AIRevLanding() {
   const [persRef, persInView] = useInView(0.05);
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white overflow-x-hidden" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+    <div className="min-h-screen bg-gradient-to-b from-gray-990 via-gray-950 to-gray-950 bg-cover bg-center text-white overflow-x-hidden" style={{ fontFamily: "'DM Sans', sans-serif" }}>
       {/* Google Fonts */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
@@ -501,14 +504,15 @@ export default function AIRevLanding() {
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: scrollY > 50 ? "rgba(5,14,28,0.85)" : "transparent",
-          backdropFilter: scrollY > 50 ? "blur(20px)" : "none",
-          borderBottom: scrollY > 50 ? "1px solid rgba(255,255,255,0.05)" : "none",
+          background: "rgba(0, 0, 0, 0.5)",
+          backdropFilter: "blur(20px)",
+          // borderBottom: scrollY > 50 ? "1px solid rgba(255,255,255,0.05)" : "none",
         }}
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <button onClick={() => { setPage("landing"); window.scrollTo(0, 0); }} className="flex items-center gap-2">
-            <BroomOnlyIcon className="w-7 h-7" style={{ animation: "wobble 3s ease-in-out infinite" }} />
+            <img src={PrismLogo} alt="Prism Logo" className="w-8 h-8" />
+            {/* <BroomOnlyIcon className="w-7 h-7" style={{ animation: "wobble 3s ease-in-out infinite" }} /> */}
             <span
               className="text-xl font-bold tracking-tight"
               style={{ fontFamily: "'Syne', sans-serif" }}
@@ -542,797 +546,803 @@ export default function AIRevLanding() {
       </nav>
 
       <div style={{ display: page === "landing" ? "contents" : "none" }}>
-      {/* ── HERO ── */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden">
-        <Sparkles />
-        {/* Gradient orbs */}
-        <div
-          className="absolute w-96 h-96 rounded-full opacity-20 blur-3xl"
-          style={{
-            background: "radial-gradient(circle, #80c540, transparent)",
-            top: "10%",
-            left: "15%",
-            transform: `translate(${scrollY * 0.02}px, ${scrollY * 0.01}px)`,
-          }}
-        />
-        <div
-          className="absolute w-72 h-72 rounded-full opacity-10 blur-3xl"
-          style={{
-            background: "radial-gradient(circle, #1a8720, transparent)",
-            bottom: "20%",
-            right: "10%",
-            transform: `translate(${-scrollY * 0.015}px, ${scrollY * 0.02}px)`,
-          }}
-        />
+        {/* ── HERO ── */}
+        <section ref={heroRef} className="relative min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden">
+          <Sparkles />
+          {/* Gradient orbs */}
+          <div
+            className="absolute w-96 h-96 rounded-full opacity-20 blur-3xl"
+            style={{
+              background: "radial-gradient(circle, #80c540, transparent)",
+              top: "10%",
+              left: "15%",
+              transform: `translate(${scrollY * 0.02}px, ${scrollY * 0.01}px)`,
+            }}
+          />
+          <div
+            className="absolute w-72 h-72 rounded-full opacity-10 blur-3xl"
+            style={{
+              background: "radial-gradient(circle, #1a8720, transparent)",
+              bottom: "20%",
+              right: "10%",
+              transform: `translate(${-scrollY * 0.015}px, ${scrollY * 0.02}px)`,
+            }}
+          />
 
-        <div className="relative z-10 max-w-5xl mx-auto text-center">
+          <div className="relative z-10 max-w-5xl mx-auto text-center">
 
-          <h1
-            className="stagger-2 font-extrabold leading-none tracking-tight mb-6"
-            style={{ fontFamily: "'Syne', sans-serif" }}
-          >
-            <span className="block text-5xl sm:text-6xl lg:text-8xl">Dirty notes?</span>
-            <span className="block shimmer-text text-3xl sm:text-4xl lg:text-5xl mt-3 tracking-wide">AI REV cleans.</span>
-          </h1>
-
-          <p className="stagger-3 text-lg sm:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed mb-4">
-            <span className="text-green-300">The Cleaner</span> sweeps up your messy CRM notes{" "}, telepatically connected to 
-            <span className="prism-text-subtle"> The Prism</span> - ultimate sales intelligence, trained on 100K+ sales notes.
-          </p>
-          <p className="stagger-4 text-sm text-white/30 max-w-lg mx-auto mb-10">
-            No more "I'll update Salesforce later." AI REV won't let you. Persistent like that.
-          </p>
-
-          <div className="stagger-5 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
-              className="px-8 py-3.5 text-base font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/25 hover:scale-105"
-              style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
+            <h1
+              className="stagger-2 font-bold leading-none tracking-tight mb-6"
+              style={{ fontFamily: "'Syne', sans-serif" }}
             >
-              Join the Study
-            </button>
-            <button
-              onClick={() => window.scrollTo({ top: window.innerHeight * 0.75, behavior: "smooth" })}
-              className="px-8 py-3.5 text-base font-semibold rounded-full border border-white/10 text-white/70 hover:border-green-400/30 hover:text-green-300 transition-all duration-300"
-            >
-              See More ↓
-            </button>
-          </div>
+              <span className="block text-5xl sm:text-6xl lg:text-8xl">Dirty notes?</span>
+              <span className="block shimmer-text text-3xl sm:text-4xl lg:text-5xl mt-3 tracking-wide">AI REV cleans.</span>
+            </h1>
 
-          {/* Stats */}
-          <div className="mt-20 grid grid-cols-3 gap-8 max-w-md mx-auto">
-            {[
-              { value: 15, suffix: "min", label: "average note delay", source: null },
-              { value: 71, suffix: "%", label: "time being optimized", source: "Salesforce State of Sales, 2024 - 5,500 respondents, 27 countries" },
-              { value: 20, suffix: "%", label: "more selling", source: "McKinsey B2B Sales Study - ~500 companies, cross-industry" },
-            ].map((s, i) => (
-              <div key={i} className="text-center group relative">
-                <p className="text-2xl sm:text-3xl font-bold text-green-400" style={{ fontFamily: "'Space Mono', monospace" }}>
-                  <Counter end={s.value} />{s.suffix}
-                </p>
-                <p className="text-white/30 text-xs mt-1">{s.label}{s.source && <span className="text-white/15 cursor-help"> *</span>}</p>
-                {s.source && (
-                  <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 px-3 py-2 rounded-lg bg-gray-900 border border-white/10 text-white/50 text-[10px] leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-20">
-                    {s.source}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+            <p className="stagger-3 text-lg sm:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed mb-4">
+              <span className="text-green-300">The Cleaner</span> sweeps up your messy CRM notes{" "}, telepatically connected to
+              <span className="prism-text-subtle"> The Prism</span> - ultimate sales intelligence, trained on 100K+ sales notes.
+            </p>
+            <p className="stagger-4 text-sm text-white/30 max-w-lg mx-auto mb-10">
+              No more "I'll update Salesforce later." AI REV won't let you. Persistent like that.
+            </p>
 
-        {/* Scroll indicator */}
-        <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce transition-opacity duration-500"
-          style={{ opacity: scrollY > 100 ? 0 : 1, pointerEvents: scrollY > 100 ? "none" : "auto" }}
-        >
-          <span className="text-white/20 text-xs font-mono">scroll</span>
-          <svg className="w-4 h-6 text-white/20" fill="none" viewBox="0 0 16 24" stroke="currentColor">
-            <rect x="1" y="1" width="14" height="22" rx="7" strokeWidth="1.5" />
-            <circle cx="8" cy="8" r="2" fill="currentColor" />
-          </svg>
-        </div>
-      </section>
-
-      {/* ── THE DUO ── */}
-      <section className="relative py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight" style={{ fontFamily: "'Syne', sans-serif" }}>
-              Need advice? <span className="prism-text">Prism knows.</span>
-            </h2>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            {/* Desktop: card - link - card in a row */}
-            <div className="hidden md:flex items-stretch">
-              {/* The Cleaner */}
-              <div className="group flex-1 p-8 rounded-2xl border border-green-400/15 bg-green-400/[0.02] transition-all duration-500 hover:border-green-400/30 hover:bg-green-400/[0.04]">
-                <div className="flex items-center gap-4 mb-5">
-                  <div className="w-14 h-14 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center">
-                    <BroomOnlyIcon className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The Cleaner</h3>
-                    <p className="text-green-400/60 text-xs font-mono">does the work</p>
-                  </div>
-                </div>
-                <ul className="space-y-3 text-white/50 text-sm">
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Debriefs you after every meeting</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Collects your messy thoughts naturally</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Formats & pushes to CRM automatically</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Chases follow-ups so you don't have to</li>
-                </ul>
-              </div>
-
-              {/* Telepathic link - between cards */}
-              <div className="flex flex-col items-center justify-center px-5">
-                <div className="flex items-center gap-0">
-                  <div className="w-8 h-px bg-gradient-to-r from-green-400/40 to-green-400/10" />
-                  <div className="relative flex items-center justify-center">
-                    <div className="w-20 h-7 rounded-full border border-white/10 bg-gray-950 flex items-center justify-center gap-1.5">
-                      <div className="w-1 h-1 rounded-full bg-green-400 animate-pulse" />
-                      <span className="text-white/25 text-[8px] font-mono tracking-widest uppercase">link</span>
-                      <div className="w-1 h-1 rounded-full bg-purple-400 animate-pulse" style={{ animationDelay: "0.5s" }} />
-                    </div>
-                    <div className="absolute inset-0 rounded-full opacity-20 animate-ping" style={{ background: "linear-gradient(90deg, rgba(128,197,64,0.2), rgba(168,85,247,0.2))", animationDuration: "3s" }} />
-                  </div>
-                  <div className="w-8 h-px bg-gradient-to-r from-purple-400/10 to-purple-400/40" />
-                </div>
-              </div>
-
-              {/* The Manager - Prism */}
-              <div className="group flex-1 p-8 rounded-2xl border border-purple-400/15 bg-purple-400/[0.02] transition-all duration-500 hover:border-purple-400/30 hover:bg-purple-400/[0.04]" style={{ animation: "prismGlow 4s ease-in-out infinite" }}>
-                <div className="flex items-center gap-4 mb-5">
-                  <div className="w-14 h-14 rounded-xl bg-purple-400/10 border border-purple-400/20 flex items-center justify-center">
-                    <PrismIcon className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The <span className="prism-text">Prism</span></h3>
-                    <p className="text-purple-400/60 text-xs font-mono">knows the way</p>
-                  </div>
-                </div>
-                <ul className="space-y-3 text-white/50 text-sm">
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Trained on 100K+ real sales notes</li>
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Knows the insides of strategic approach to sales</li>
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Suggests tailored questions to the Cleaner</li>
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Adapts to your vertical and deal stage</li>
-                </ul>
-              </div>
+            <div className="stagger-5 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button
+                onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
+                className="px-8 py-3.5 text-base font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/25 hover:scale-105"
+                style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
+              >
+                Join the Study
+              </button>
+              <button
+                onClick={() => window.scrollTo({ top: window.innerHeight * 0.75, behavior: "smooth" })}
+                className="px-8 py-3.5 text-base font-semibold rounded-full border border-white/10 text-white/70 hover:border-green-400/30 hover:text-green-300 transition-all duration-300"
+              >
+                See More ↓
+              </button>
             </div>
 
-            {/* Mobile: stacked with link in between */}
-            <div className="flex md:hidden flex-col">
-              <div className="group p-8 rounded-2xl border border-green-400/15 bg-green-400/[0.02]">
-                <div className="flex items-center gap-4 mb-5">
-                  <div className="w-14 h-14 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center">
-                    <BroomOnlyIcon className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The Cleaner</h3>
-                    <p className="text-green-400/60 text-xs font-mono">Does the work</p>
-                  </div>
-                </div>
-                <ul className="space-y-3 text-white/50 text-sm">
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Debriefs you after every meeting</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Collects your messy thoughts naturally</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Formats & pushes to CRM automatically</li>
-                  <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Chases follow-ups so you don't have to</li>
-                </ul>
-              </div>
-              {/* Mobile telepathic link */}
-              <div className="flex items-center justify-center py-3">
-                <div className="flex items-center gap-0">
-                  <div className="w-10 h-px bg-gradient-to-r from-green-400/30 to-green-400/10" />
-                  <div className="w-16 h-6 rounded-full border border-white/10 bg-gray-950 flex items-center justify-center gap-1.5">
-                    <div className="w-1 h-1 rounded-full bg-green-400 animate-pulse" />
-                    <span className="text-white/25 text-[7px] font-mono tracking-widest uppercase">link</span>
-                    <div className="w-1 h-1 rounded-full bg-purple-400 animate-pulse" style={{ animationDelay: "0.5s" }} />
-                  </div>
-                  <div className="w-10 h-px bg-gradient-to-r from-purple-400/10 to-purple-400/30" />
-                </div>
-              </div>
-              <div className="group p-8 rounded-2xl border border-purple-400/15 bg-purple-400/[0.02]" style={{ animation: "prismGlow 4s ease-in-out infinite" }}>
-                <div className="flex items-center gap-4 mb-5">
-                  <div className="w-14 h-14 rounded-xl bg-purple-400/10 border border-purple-400/20 flex items-center justify-center">
-                    <PrismIcon className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The Manager - <span className="prism-text">Prism</span></h3>
-                    <p className="text-purple-400/60 text-xs font-mono">Knows the way</p>
-                  </div>
-                </div>
-                <ul className="space-y-3 text-white/50 text-sm">
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Trained on 100K+ real sales notes</li>
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Knows the insides of strategic approach to sales</li>
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Suggests tailored questions to the Cleaner</li>
-                  <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Adapts to your vertical and deal stage</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* ── HOW IT WORKS ── */}
-      <section id="how" ref={howRef} className="relative py-32 px-6 overflow-hidden">
-        {/* Background texture */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-          backgroundSize: "32px 32px",
-        }} />
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-20">
-            <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-3">The Process</p>
-            <h2
-              className="text-4xl sm:text-5xl font-extrabold tracking-tight"
-              style={{
-                fontFamily: "'Syne', sans-serif",
-                opacity: howInView ? 1 : 0,
-                transform: howInView ? "translateY(0)" : "translateY(30px)",
-                transition: "all 0.8s ease",
-              }}
-            >
-              How the
-              <span className="text-green-400"> cleaning </span>
-              ceremony works
-            </h2>
-          </div>
-
-          {/* Timeline */}
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            {/* Steps */}
-            <div className="space-y-8">
-              <TimelineStep index={0} step="01" time="After your meeting" title="The Meeting Ends. The Cleaning Begins." desc={"Just walked out of an in-person meeting? AI REV calls you for a quick debrief. Virtual meeting on Zoom, Teams, or Meet? AI REV stays on after everyone leaves and asks about next steps - using the transcript it already has."} />
-              <TimelineStep index={1} step="02" time="2 minutes later" title="It Asks. You Answer. Done." desc="AI REV knows what matters. Deal size? Next steps? Blockers? You get guided through the essential details based on patterns from top-performing reps." />
-              <TimelineStep index={2} step="03" time="Instantly" title="CRM Gets the Royal Treatment." desc="Your note appears in the CRM - formatted, structured, with visual next steps. Not a wall of text. A beautiful briefing so clean, it's like wiping the sensor on a clear day." />
-              <TimelineStep index={3} step="04" time="Ongoing" title="The Sweeping Never Stops." desc="Action items get monitored, deadlines get flagged, and if you're too busy - the follow-up email gets drafted automatically. Your pipeline stays clean 24/7." />
-
-            </div>
-
-            {/* Mockup */}
-            <div>
-              <PhoneMockup />
-            </div>
-          </div>
-
-          {/* Voice prompt examples - full width */}
-          <div className="mt-12 p-6 rounded-2xl border border-white/5 bg-white/[0.02]">
-            <p className="text-green-400/60 text-xs font-mono tracking-widest uppercase mb-4">Just say:</p>
-            <div className="grid sm:grid-cols-3 gap-x-8 gap-y-3">
+            {/* Stats */}
+            <div className="mt-20 grid grid-cols-3 gap-8 max-w-md mx-auto">
               {[
-                "I just had a meeting with Acme Corp...",
-                "What next steps are on me today?",
-                "Brief me before my next meeting.",
-                "Log that they pushed the timeline to Q3.",
-                "Who haven't I followed up with this week?",
-                "Draft a recap email for the Globex meeting.",
-                "Flag this deal - champion went silent.",
-                "What objections came up most this month?",
-                "Remind me to check in with Dana on Friday.",
-              ].map((prompt, i) => (
-                <div key={i} className="flex items-start gap-2.5">
-                  <svg className="w-4 h-4 mt-0.5 text-green-400/40 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-                  </svg>
-                  <p className="text-white/50 text-sm italic leading-relaxed">"{prompt}"</p>
+                { value: 15, suffix: "min", label: "average note delay", source: null },
+                { value: 71, suffix: "%", label: "time being optimized", source: "Salesforce State of Sales, 2024 - 5,500 respondents, 27 countries" },
+                { value: 20, suffix: "%", label: "more selling", source: "McKinsey B2B Sales Study - ~500 companies, cross-industry" },
+              ].map((s, i) => (
+                <div key={i} className="text-center group relative">
+                  <p className="text-2xl sm:text-3xl font-bold text-green-400" style={{ fontFamily: "'Space Mono', monospace" }}>
+                    <Counter end={s.value} />{s.suffix}
+                  </p>
+                  <p className="text-white/30 text-xs mt-1">{s.label}{s.source && <span className="text-white/15 cursor-help"> *</span>}</p>
+                  {s.source && (
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 px-3 py-2 rounded-lg bg-gray-900 border border-white/10 text-white/50 text-[10px] leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-20">
+                      {s.source}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── VOICE PERSONALITIES ── */}
-      <section className="relative py-32 px-6">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-center text-green-400 text-xs font-mono tracking-widest uppercase mb-3">Pick Your Voice</p>
-          <p className="text-center text-white/50 text-sm mb-12 max-w-lg mx-auto">Different personality, same spotless results. Choose the voice that matches your energy - the broom does the rest.</p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: "Bestie", Portrait: PortraitLady, tone: "Warm • Conversational", desc: "Chatty, warm, makes note-taking feel like gossip with a friend.", color: "#f59e0b" },
-              { name: "Executive", Portrait: PortraitMan, tone: "Confident • Structured", desc: "Professional, polished, asks sharp questions. Boardroom energy.", color: "#3b82f6" },
-              { name: "Analyst", Portrait: PortraitScientist, tone: "Precise • Insightful", desc: "Data-driven, methodical, spots patterns in your pipeline you'd miss.", color: "#9CA3AF" },
-              { name: "Closer", Portrait: PortraitSpark, tone: "Direct • Urgent", desc: "No-nonsense, fast-paced, cuts to what matters for the deal.", color: "#F36464" },
-            ].map((v, i) => (
-              <div key={i} className="group flex flex-col items-center text-center">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-16 h-16 rounded-xl border border-white/10 bg-white/[0.02] flex items-center justify-center overflow-hidden p-1">
-                    <v.Portrait className="w-12 h-14" />
-                  </div>
-                  <span className="text-white/20 text-lg font-light">+</span>
-                  <div className="w-12 h-12 rounded-xl border border-green-400/15 bg-green-400/[0.03] flex items-center justify-center p-1.5">
-                    <BroomOnlyIcon className="w-7 h-7" />
-                  </div>
-                  <span className="text-white/20 text-lg font-light">=</span>
-                  <div
-                    className="relative w-16 h-16 rounded-xl border flex items-center justify-center overflow-hidden p-1 transition-all duration-500 group-hover:scale-105"
-                    style={{
-                      borderColor: `${v.color}30`,
-                      background: `${v.color}08`,
-                      boxShadow: `0 0 20px ${v.color}10`,
-                    }}
-                  >
-                    <v.Portrait className="w-10 h-12" />
-                    <BroomOnlyIcon className="w-6 h-14 absolute top-1 right-0 opacity-70" />
-                  </div>
-                </div>
-                <h4 className="text-white font-bold text-base mb-1" style={{ fontFamily: "'Syne', sans-serif" }}>{v.name}</h4>
-                <p className="text-xs font-mono mb-2" style={{ color: `${v.color}AA` }}>{v.tone}</p>
-                <p className="text-white/45 text-sm leading-relaxed">{v.desc}</p>
-              </div>
-            ))}
+          {/* Scroll indicator */}
+          <div
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce transition-opacity duration-500"
+            style={{ opacity: scrollY > 100 ? 0 : 1, pointerEvents: scrollY > 100 ? "none" : "auto" }}
+          >
+            <span className="text-white/20 text-xs font-mono">scroll</span>
+            <svg className="w-4 h-6 text-white/20" fill="none" viewBox="0 0 16 24" stroke="currentColor">
+              <rect x="1" y="1" width="14" height="22" rx="7" strokeWidth="1.5" />
+              <circle cx="8" cy="8" r="2" fill="currentColor" />
+            </svg>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── PRISM INTELLIGENCE ── */}
-      <section id="prism" className="relative py-32 px-6 overflow-hidden">
-        {/* Subtle prism-colored gradient background */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          background: "linear-gradient(135deg, #3b82f6 0%, #a855f7 30%, #f59e0b 60%, #80c540 100%)",
-        }} />
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <p className="prism-text-subtle text-xs font-mono tracking-widest uppercase mb-3">Premium Intelligence</p>
-            <h2
-              className="text-4xl sm:text-5xl font-extrabold tracking-tight"
-              style={{ fontFamily: "'Syne', sans-serif" }}
-            >
-              The brain behind the broom.
-              <br />
-              <span className="prism-text">That's Prism.</span>
-            </h2>
-            <p className="text-white/40 text-base mt-5 max-w-2xl mx-auto leading-relaxed">
-              Prism is the intelligence layer your competitors don't have. Trained on hundreds of thousands of real sales notes
-              across SaaS, manufacturing, finance, healthcare, and more - it knows what a deal-closing note looks like
-              in <em>your</em> industry.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-6 mb-16">
-            {/* Prism insight cards */}
-            {[
-              {
-                color: "#80c540",
-                title: "Pattern Recognition",
-                stat: "100K+",
-                statLabel: "sales notes analyzed",
-                desc: "Prism has seen every kind of deal. It recognizes the patterns that separate closed-won from closed-lost - and tells the Cleaner what to capture.",
-              },
-              {
-                color: "#3b82f6",
-                title: "Your Data, Your Playbook",
-                stat: "∞",
-                statLabel: "custom adaptability",
-                desc: "Prism adapts to your internal datasets and processes - or starts with an industry template. Either way, it learns how your team wins and tunes itself accordingly.",
-              },
-              {
-                color: "#a855f7",
-                title: "Predict & Prescribe",
-                stat: "92%",
-                statLabel: "close-rate accuracy",
-                desc: "Prism accurately predicts closing chances for every deal and recommends the best next step - so your reps always know exactly what to do to move the needle.",
-              },
-            ].map((card, i) => (
-              <div
-                key={i}
-                className="relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-white/15"
-                style={{ "--accent": card.color }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <PrismIcon className="w-6 h-6 opacity-60" />
-                  <h3 className="text-white font-bold text-base">{card.title}</h3>
-                </div>
-                <div className="mb-4">
-                  <span className="text-3xl font-black" style={{ fontFamily: "'Space Mono', monospace", color: card.color }}>
-                    {card.stat}
-                  </span>
-                  <span className="text-white/30 text-xs ml-2">{card.statLabel}</span>
-                </div>
-                <p className="text-white/45 text-sm leading-relaxed">{card.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Prism Insight Demo */}
-          <div className="max-w-2xl mx-auto rounded-2xl border border-purple-400/15 bg-gray-950/80 backdrop-blur-sm p-6 shadow-2xl" style={{ animation: "prismGlow 4s ease-in-out infinite" }}>
-            <div className="flex items-center gap-2 mb-4">
-              <PrismIcon className="w-5 h-5" />
-              <span className="prism-text-subtle text-sm font-bold tracking-wide">Prism Insight</span>
-              <span className="ml-auto text-white/20 text-xs font-mono">live</span>
-              <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+        {/* ── THE DUO ── */}
+        <section className="relative py-24 px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight" style={{ fontFamily: "'Syne', sans-serif" }}>
+                Need advice? <span className="prism-text">Prism knows.</span>
+              </h2>
             </div>
-            <div className="space-y-3">
-              <div className="bg-white/[0.03] rounded-xl p-4 border border-white/5">
-                <p className="text-white/30 text-xs font-mono mb-2">OBJECTION DETECTED</p>
-                <p className="text-white/70 text-sm leading-relaxed">
-                  Acme Corp raised <span className="text-purple-300 font-semibold">"We need to check with legal first"</span> -
-                  this objection appeared in <span className="text-green-300 font-semibold">34 of your deals</span> this quarter.
-                  Here's what worked:
-                </p>
+
+            <div className="max-w-5xl mx-auto">
+              {/* Desktop: card - link - card in a row */}
+              <div className="hidden md:flex items-stretch">
+                {/* The Cleaner */}
+                <div className="group flex-1 p-8 rounded-2xl border border-green-400/15 bg-green-400/[0.02] transition-all duration-500 hover:border-green-400/30 hover:bg-green-400/[0.04]">
+                  <div className="flex items-center gap-4 mb-5">
+                    <div className="w-14 h-14 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center">
+                      <BroomOnlyIcon className="w-8 h-8" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The Cleaner</h3>
+                      <p className="text-green-400/60 text-xs font-mono">does the work</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-white/50 text-sm">
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Debriefs you after every meeting</li>
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Collects your messy thoughts naturally</li>
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Formats & pushes to CRM automatically</li>
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Chases follow-ups so you don't have to</li>
+                  </ul>
+                </div>
+
+                {/* Telepathic link - between cards */}
+                <div className="flex flex-col items-center justify-center px-5">
+                  <div className="flex items-center gap-0">
+                    <div className="w-8 h-px bg-gradient-to-r from-green-400/40 to-green-400/10" />
+                    <div className="relative flex items-center justify-center">
+                      <div className="w-20 h-7 rounded-full border border-white/10 bg-gray-950 flex items-center justify-center gap-1.5">
+                        <div className="w-1 h-1 rounded-full bg-green-400 animate-pulse" />
+                        <span className="text-white/25 text-[8px] font-mono tracking-widest uppercase">link</span>
+                        <div className="w-1 h-1 rounded-full bg-purple-400 animate-pulse" style={{ animationDelay: "0.5s" }} />
+                      </div>
+                      <div className="absolute inset-0 rounded-full opacity-20 animate-ping" style={{ background: "linear-gradient(90deg, rgba(128,197,64,0.2), rgba(168,85,247,0.2))", animationDuration: "3s" }} />
+                    </div>
+                    <div className="w-8 h-px bg-gradient-to-r from-purple-400/10 to-purple-400/40" />
+                  </div>
+                </div>
+
+                {/* The Manager - Prism */}
+                <div className="group flex-1 p-8 rounded-2xl border border-purple-400/15 bg-purple-400/[0.02] transition-all duration-500 hover:border-purple-400/30 hover:bg-purple-400/[0.04]" style={{ animation: "prismGlow 4s ease-in-out infinite" }}>
+                  <div className="flex items-center gap-4 mb-5">
+                    <div className="w-14 h-14 rounded-xl bg-purple-400/10 border border-purple-400/20 flex items-center justify-center">
+                      <PrismIcon className="w-8 h-8" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The <span className="prism-text">Prism</span></h3>
+                      <p className="text-purple-400/60 text-xs font-mono">knows the way</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-white/50 text-sm">
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Trained on 100K+ real sales notes</li>
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Knows the insides of strategic approach to sales</li>
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Suggests tailored questions to the Cleaner</li>
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Adapts to your vertical and deal stage</li>
+                  </ul>
+                </div>
               </div>
-              <div className="flex gap-3">
+
+              {/* Mobile: stacked with link in between */}
+              <div className="flex md:hidden flex-col">
+                <div className="group p-8 rounded-2xl border border-green-400/15 bg-green-400/[0.02]">
+                  <div className="flex items-center gap-4 mb-5">
+                    <div className="w-14 h-14 rounded-xl bg-green-400/10 border border-green-400/20 flex items-center justify-center">
+                      <BroomOnlyIcon className="w-8 h-8" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The Cleaner</h3>
+                      <p className="text-green-400/60 text-xs font-mono">Does the work</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-white/50 text-sm">
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Debriefs you after every meeting</li>
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Collects your messy thoughts naturally</li>
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Formats & pushes to CRM automatically</li>
+                    <li className="flex items-start gap-2"><span className="text-green-400 mt-0.5">&#9656;</span> Chases follow-ups so you don't have to</li>
+                  </ul>
+                </div>
+                {/* Mobile telepathic link */}
+                <div className="flex items-center justify-center py-3">
+                  <div className="flex items-center gap-0">
+                    <div className="w-10 h-px bg-gradient-to-r from-green-400/30 to-green-400/10" />
+                    <div className="w-16 h-6 rounded-full border border-white/10 bg-gray-950 flex items-center justify-center gap-1.5">
+                      <div className="w-1 h-1 rounded-full bg-green-400 animate-pulse" />
+                      <span className="text-white/25 text-[7px] font-mono tracking-widest uppercase">link</span>
+                      <div className="w-1 h-1 rounded-full bg-purple-400 animate-pulse" style={{ animationDelay: "0.5s" }} />
+                    </div>
+                    <div className="w-10 h-px bg-gradient-to-r from-purple-400/10 to-purple-400/30" />
+                  </div>
+                </div>
+                <div className="group p-8 rounded-2xl border border-purple-400/15 bg-purple-400/[0.02]" style={{ animation: "prismGlow 4s ease-in-out infinite" }}>
+                  <div className="flex items-center gap-4 mb-5">
+                    <div className="w-14 h-14 rounded-xl bg-purple-400/10 border border-purple-400/20 flex items-center justify-center">
+                      <PrismIcon className="w-8 h-8" />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold text-xl" style={{ fontFamily: "'Syne', sans-serif" }}>The Manager - <span className="prism-text">Prism</span></h3>
+                      <p className="text-purple-400/60 text-xs font-mono">Knows the way</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-3 text-white/50 text-sm">
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Trained on 100K+ real sales notes</li>
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Knows the insides of strategic approach to sales</li>
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Suggests tailored questions to the Cleaner</li>
+                    <li className="flex items-start gap-2"><span className="text-purple-400 mt-0.5">&#9656;</span> Adapts to your vertical and deal stage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* ── HOW IT WORKS ── */}
+        <section id="how" ref={howRef} className="relative py-32 px-6 overflow-hidden">
+          {/* Background texture */}
+          <div className="absolute inset-0 opacity-[0.03]" style={{
+            backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "32px 32px",
+          }} />
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center mb-20">
+              <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-3">The Process</p>
+              <h2
+                className="text-4xl sm:text-5xl font-semibold tracking-tight"
+                style={{
+                  fontFamily: "'Syne', sans-serif",
+                  opacity: howInView ? 1 : 0,
+                  transform: howInView ? "translateY(0)" : "translateY(30px)",
+                  transition: "all 0.8s ease",
+                }}
+              >
+                How the
+                <span className="text-green-400"> cleaning </span>
+                ceremony works
+              </h2>
+            </div>
+
+            {/* Timeline */}
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              {/* Steps */}
+              <div className="space-y-8">
+                <TimelineStep index={0} step="01" time="After your meeting" title="The Meeting Ends. The Cleaning Begins." desc={"Just walked out of an in-person meeting? AI REV calls you for a quick debrief. Virtual meeting on Zoom, Teams, or Meet? AI REV stays on after everyone leaves and asks about next steps - using the transcript it already has."} />
+                <TimelineStep index={1} step="02" time="2 minutes later" title="It Asks. You Answer. Done." desc="AI REV knows what matters. Deal size? Next steps? Blockers? You get guided through the essential details based on patterns from top-performing reps." />
+                <TimelineStep index={2} step="03" time="Instantly" title="CRM Gets the Royal Treatment." desc="Your note appears in the CRM - formatted, structured, with visual next steps. Not a wall of text. A beautiful briefing so clean, it's like wiping the sensor on a clear day." />
+                <TimelineStep index={3} step="04" time="Ongoing" title="The Sweeping Never Stops." desc="Action items get monitored, deadlines get flagged, and if you're too busy - the follow-up email gets drafted automatically. Your pipeline stays clean 24/7." />
+
+              </div>
+
+              {/* Mockup */}
+              <div>
+                <PhoneMockup />
+              </div>
+            </div>
+
+            {/* Voice prompt examples - full width */}
+            <div className="mt-12 p-6 rounded-2xl border border-white/5 bg-white/[0.02]">
+              <p className="text-green-400/60 text-xs font-mono tracking-widest uppercase mb-4">Just say:</p>
+              <div className="grid sm:grid-cols-3 gap-x-8 gap-y-3">
                 {[
-                  { label: "Offer a joint legal meeting", rate: "68%", color: "green" },
-                  { label: "Send a pre-approved security packet", rate: "54%", color: "blue" },
-                  { label: "Ask for a specific timeline", rate: "31%", color: "purple" },
-                ].map((o, i) => (
-                  <div key={i} className={`flex-1 bg-${o.color}-400/5 rounded-lg p-3 border border-${o.color}-400/10`} style={{ background: `color-mix(in srgb, ${o.color === "green" ? "#4ade80" : o.color === "blue" ? "#60a5fa" : "#c084fc"} 5%, transparent)`, borderColor: `color-mix(in srgb, ${o.color === "green" ? "#4ade80" : o.color === "blue" ? "#60a5fa" : "#c084fc"} 10%, transparent)` }}>
-                    <p className="text-xs font-mono mb-1.5" style={{ color: `color-mix(in srgb, ${o.color === "green" ? "#4ade80" : o.color === "blue" ? "#60a5fa" : "#c084fc"} 60%, transparent)` }}>{o.rate} WIN RATE</p>
-                    <p className="text-white/50 text-xs">"{o.label}"</p>
+                  "I just had a meeting with Acme Corp...",
+                  "What next steps are on me today?",
+                  "Brief me before my next meeting.",
+                  "Log that they pushed the timeline to Q3.",
+                  "Who haven't I followed up with this week?",
+                  "Draft a recap email for the Globex meeting.",
+                  "Flag this deal - champion went silent.",
+                  "What objections came up most this month?",
+                  "Remind me to check in with Dana on Friday.",
+                ].map((prompt, i) => (
+                  <div key={i} className="flex items-start gap-2.5">
+                    <svg className="w-4 h-4 mt-0.5 text-green-400/40 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                    <p className="text-white/50 text-sm italic leading-relaxed">"{prompt}"</p>
                   </div>
                 ))}
               </div>
-              <p className="text-white/25 text-xs text-center font-mono">Based on 142 closed deals in your Salesforce this quarter</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── FEATURES ── */}
-      <section id="features" ref={featRef} className="relative py-32 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-3">Cleaning equipment included</p>
-            <h2
-              className="text-4xl sm:text-5xl font-extrabold tracking-tight"
-              style={{
-                fontFamily: "'Syne', sans-serif",
-                opacity: featInView ? 1 : 0,
-                transform: featInView ? "translateY(0)" : "translateY(30px)",
-                transition: "all 0.8s ease",
-              }}
-            >
-              They don't just clean.
-              <br />
-              <span className="text-white/40">They run the whole silo.</span>
-            </h2>
+        {/* ── VOICE PERSONALITIES ── */}
+        <section className="relative py-32 px-6">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-center text-green-400 text-xs font-mono tracking-widest uppercase mb-3">Pick Your Voice</p>
+            <p className="text-center text-white/50 text-sm mb-12 max-w-lg mx-auto">Different personality, same spotless results. Choose the voice that matches your energy - the broom does the rest.</p>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { name: "Bestie", Portrait: PortraitLady, tone: "Warm • Conversational", desc: "Chatty, warm, makes note-taking feel like gossip with a friend.", color: "#f59e0b" },
+                { name: "Executive", Portrait: PortraitMan, tone: "Confident • Structured", desc: "Professional, polished, asks sharp questions. Boardroom energy.", color: "#3b82f6" },
+                { name: "Analyst", Portrait: PortraitScientist, tone: "Precise • Insightful", desc: "Data-driven, methodical, spots patterns in your pipeline you'd miss.", color: "#9CA3AF" },
+                { name: "Closer", Portrait: PortraitSpark, tone: "Direct • Urgent", desc: "No-nonsense, fast-paced, cuts to what matters for the deal.", color: "#F36464" },
+              ].map((v, i) => (
+                <div key={i} className="group flex flex-col items-center text-center">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-16 h-16 rounded-xl border border-white/10 bg-white/[0.02] flex items-center justify-center overflow-hidden p-1">
+                      <v.Portrait className="w-12 h-14" />
+                    </div>
+                    <span className="text-white/20 text-lg font-light">+</span>
+                    <div className="w-12 h-12 rounded-xl border border-green-400/15 bg-green-400/[0.03] flex items-center justify-center p-1.5">
+                      <BroomOnlyIcon className="w-7 h-7" />
+                    </div>
+                    <span className="text-white/20 text-lg font-light">=</span>
+                    <div
+                      className="relative w-16 h-16 rounded-xl border flex items-center justify-center overflow-hidden p-1 transition-all duration-500 group-hover:scale-105"
+                      style={{
+                        borderColor: `${v.color}30`,
+                        background: `${v.color}08`,
+                        boxShadow: `0 0 20px ${v.color}10`,
+                      }}
+                    >
+                      <v.Portrait className="w-10 h-12" />
+                      <BroomOnlyIcon className="w-6 h-14 absolute top-1 right-0 opacity-70" />
+                    </div>
+                  </div>
+                  <h4 className="text-white font-bold text-base mb-1" style={{ fontFamily: "'Syne', sans-serif" }}>{v.name}</h4>
+                  <p className="text-xs font-mono mb-2" style={{ color: `${v.color}AA` }}>{v.tone}</p>
+                  <p className="text-white/45 text-sm leading-relaxed">{v.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
+        </section>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* ── PRISM INTELLIGENCE ── */}
+        <section id="prism" className="relative py-32 px-6 overflow-hidden">
+          {/* Subtle prism-colored gradient background */}
+          <div className="absolute inset-0 opacity-[0.04]" style={{
+            background: "linear-gradient(135deg, #3b82f6 0%, #a855f7 30%, #f59e0b 60%, #80c540 100%)",
+          }} />
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center mb-16">
+              <p className="prism-text-subtle text-xs font-mono tracking-widest uppercase mb-3">Premium Intelligence</p>
+              <h2
+                className="text-4xl sm:text-5xl font-bold tracking-tight"
+                style={{ fontFamily: "'Syne', sans-serif" }}
+              >
+                The brain behind the broom.
+                <br />
+                <span className="prism-text">That's Prism.</span>
+              </h2>
+              <p className="text-white/40 text-base mt-5 max-w-2xl mx-auto leading-relaxed">
+                Prism is the intelligence layer your competitors don't have. Trained on hundreds of thousands of real sales notes
+                across SaaS, manufacturing, finance, healthcare, and more - it knows what a deal-closing note looks like
+                in <em>your</em> industry.
+              </p>
+            </div>
 
-            {/* 1 - Post-Meeting Sweep: hero feature, wide */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="sm:col-span-2 relative p-6 rounded-2xl border border-green-400/15 bg-green-400/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/30" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)" }}>
-                  <div className="flex flex-col sm:flex-row gap-5">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 rounded-lg bg-green-400/10 border border-green-400/20 flex items-center justify-center">
-                          <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            <div className="grid lg:grid-cols-3 gap-6 mb-16">
+              {/* Prism insight cards */}
+              {[
+                {
+                  color: "#80c540",
+                  title: "Pattern Recognition",
+                  stat: "100K+",
+                  statLabel: "sales notes analyzed",
+                  desc: "Prism has seen every kind of deal. It recognizes the patterns that separate closed-won from closed-lost - and tells the Cleaner what to capture.",
+                },
+                {
+                  color: "#3b82f6",
+                  title: "Your Data, Your Playbook",
+                  stat: "∞",
+                  statLabel: "custom adaptability",
+                  desc: "Prism adapts to your internal datasets and processes - or starts with an industry template. Either way, it learns how your team wins and tunes itself accordingly.",
+                },
+                {
+                  color: "#a855f7",
+                  title: "Predict & Prescribe",
+                  stat: "92%",
+                  statLabel: "close-rate accuracy",
+                  desc: "Prism accurately predicts closing chances for every deal and recommends the best next step - so your reps always know exactly what to do to move the needle.",
+                },
+              ].map((card, i) => (
+                <div
+                  key={i}
+                  className="relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-white/15"
+                  style={{ "--accent": card.color }}
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <PrismIcon className="w-6 h-6 opacity-60" />
+                    <h3 className="text-white font-bold text-base">{card.title}</h3>
+                  </div>
+                  <div className="mb-4">
+                    <span className="text-3xl font-black" style={{ fontFamily: "'Space Mono', monospace", color: card.color }}>
+                      {card.stat}
+                    </span>
+                    <span className="text-white/30 text-xs ml-2">{card.statLabel}</span>
+                  </div>
+                  <p className="text-white/45 text-sm leading-relaxed">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Prism Insight Demo */}
+            <div className="max-w-2xl mx-auto rounded-2xl border border-purple-400/15 bg-gray-950/80 backdrop-blur-sm p-6 shadow-2xl" style={{ animation: "prismGlow 4s ease-in-out infinite" }}>
+              <div className="flex items-center gap-2 mb-4">
+                <PrismIcon className="w-5 h-5" />
+                <span className="prism-text-subtle text-sm font-bold tracking-wide">Prism Insight</span>
+                <span className="ml-auto text-white/20 text-xs font-mono">live</span>
+                <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+              </div>
+              <div className="space-y-3">
+                <div className="bg-white/[0.03] rounded-xl p-4 border border-white/5">
+                  <p className="text-white/30 text-xs font-mono mb-2">OBJECTION DETECTED</p>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Acme Corp raised <span className="text-purple-300 font-semibold">"We need to check with legal first"</span> -
+                    this objection appeared in <span className="text-green-300 font-semibold">34 of your deals</span> this quarter.
+                    Here's what worked:
+                  </p>
+                </div>
+                <div className="flex gap-3">
+                  {[
+                    { label: "Offer a joint legal meeting", rate: "68%", color: "green" },
+                    { label: "Send a pre-approved security packet", rate: "54%", color: "blue" },
+                    { label: "Ask for a specific timeline", rate: "31%", color: "purple" },
+                  ].map((o, i) => (
+                    <div key={i} className={`flex-1 bg-${o.color}-400/5 rounded-lg p-3 border border-${o.color}-400/10`} style={{ background: `color-mix(in srgb, ${o.color === "green" ? "#4ade80" : o.color === "blue" ? "#60a5fa" : "#c084fc"} 5%, transparent)`, borderColor: `color-mix(in srgb, ${o.color === "green" ? "#4ade80" : o.color === "blue" ? "#60a5fa" : "#c084fc"} 10%, transparent)` }}>
+                      <p className="text-xs font-mono mb-1.5" style={{ color: `color-mix(in srgb, ${o.color === "green" ? "#4ade80" : o.color === "blue" ? "#60a5fa" : "#c084fc"} 60%, transparent)` }}>{o.rate} WIN RATE</p>
+                      <p className="text-white/50 text-xs">"{o.label}"</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-white/25 text-xs text-center font-mono">Based on 142 closed deals in your Salesforce this quarter</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── FEATURES ── */}
+        <section id="features" ref={featRef} className="relative py-32 px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-3">Cleaning equipment included</p>
+              <h2
+                className="text-4xl sm:text-5xl font-bold tracking-tight"
+                style={{
+                  fontFamily: "'Syne', sans-serif",
+                  opacity: featInView ? 1 : 0,
+                  transform: featInView ? "translateY(0)" : "translateY(30px)",
+                  transition: "all 0.8s ease",
+                }}
+              >
+                They don't just clean.
+                <br />
+                <span className="text-white/40">They run the whole silo.</span>
+              </h2>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+              {/* 1 - Post-Meeting Sweep: hero feature, wide */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="sm:col-span-2 relative p-6 rounded-2xl border border-green-400/15 bg-green-400/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/30" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)" }}>
+                    <div className="flex flex-col sm:flex-row gap-5">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-10 h-10 rounded-lg bg-green-400/10 border border-green-400/20 flex items-center justify-center">
+                            <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                          </div>
+                          <h3 className="text-white font-bold text-lg">Post-Meeting Sweep</h3>
                         </div>
-                        <h3 className="text-white font-bold text-lg">Post-Meeting Sweep</h3>
+                        <p className="text-white/50 text-sm leading-relaxed mb-9">
+                          After an in-person meeting, AI REV calls you for a quick 2-minute debrief. For virtual meetings, it joins your Zoom, Teams, or Meet call, and stays on after everyone leaves - asking only about next steps based on the transcript.
+                        </p>
+                        <div className="flex items-center gap-4 text-xs">
+                          <div className="flex items-center gap-1.5 text-green-400/60"><span className="w-1.5 h-1.5 rounded-full bg-green-400/60" /> In-person debrief</div>
+                          <div className="flex items-center gap-1.5 text-green-400/60"><span className="w-1.5 h-1.5 rounded-full bg-green-400/60" /> Zoom / Teams / Meet</div>
+                          <div className="flex items-center gap-1.5 text-green-400/60"><span className="w-1.5 h-1.5 rounded-full bg-green-400/60" /> In-App</div>
+                        </div>
                       </div>
-                      <p className="text-white/50 text-sm leading-relaxed mb-4">
-                        After an in-person meeting, AI REV calls you for a quick 2-minute debrief. For virtual meetings, it joins your Zoom, Teams, or Meet call, and stays on after everyone leaves - asking only about next steps based on the transcript.
-                      </p>
-                      <div className="flex items-center gap-4 text-xs">
-                        <div className="flex items-center gap-1.5 text-green-400/60"><span className="w-1.5 h-1.5 rounded-full bg-green-400/60" /> In-person debrief</div>
-                        <div className="flex items-center gap-1.5 text-green-400/60"><span className="w-1.5 h-1.5 rounded-full bg-green-400/60" /> Zoom / Teams / Meet</div>
-                        <div className="flex items-center gap-1.5 text-green-400/60"><span className="w-1.5 h-1.5 rounded-full bg-green-400/60" /> In-App</div>
+                      {/* Mini timeline */}
+                      <div className="sm:w-44 flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:gap-3 text-[10px] font-mono text-white/30 mt-5">
+                        <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-md bg-white/5 border border-white/10 flex items-center justify-center text-white/40">📅</div><span>Meeting ends</span></div>
+                        <div className="hidden sm:block w-px h-3 ml-3 bg-green-400/20" />
+                        <div className="text-white/15 sm:hidden">→</div>
+                        <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-md bg-green-400/10 border border-green-400/20 flex items-center justify-center text-green-400/60">🎙</div><span className="text-green-400/50">AI REV stays on</span></div>
+                        <div className="hidden sm:block w-px h-3 ml-3 bg-green-400/20" />
+                        <div className="text-white/15 sm:hidden">→</div>
+                        <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-md bg-green-400/15 border border-green-400/25 flex items-center justify-center text-green-300/70">✓</div><span className="text-green-300/50">Next steps captured</span></div>
                       </div>
                     </div>
-                    {/* Mini timeline */}
-                    <div className="sm:w-44 flex flex-row sm:flex-col items-center sm:items-start gap-2 sm:gap-3 text-[10px] font-mono text-white/30">
-                      <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-md bg-white/5 border border-white/10 flex items-center justify-center text-white/40">📅</div><span>Meeting ends</span></div>
-                      <div className="hidden sm:block w-px h-3 ml-3 bg-green-400/20" />
-                      <div className="text-white/15 sm:hidden">→</div>
-                      <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-md bg-green-400/10 border border-green-400/20 flex items-center justify-center text-green-400/60">🎙</div><span className="text-green-400/50">AI REV stays on</span></div>
-                      <div className="hidden sm:block w-px h-3 ml-3 bg-green-400/20" />
-                      <div className="text-white/15 sm:hidden">→</div>
-                      <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-md bg-green-400/15 border border-green-400/25 flex items-center justify-center text-green-300/70">✓</div><span className="text-green-300/50">Next steps captured</span></div>
+                  </div>
+                );
+              })()}
+
+              {/* 2 - Prism-Powered Notes */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="relative p-6 rounded-2xl border border-purple-400/15 bg-purple-400/[0.02] overflow-hidden transition-all duration-700 hover:border-purple-400/30" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "100ms" }}>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                        <PrismIcon className="w-8 h-8" />
+                      </div>
+                      <h3 className="text-white font-bold text-lg">Prism-Powered Notes</h3>
+                    </div>
+                    <p className="text-white/50 text-sm leading-relaxed mb-4">
+                      100K+ winning notes studied. Prism tells the Cleaner exactly what to ask - your messy thoughts become structured CRM gold, tuned to your industry.
+                    </p>
+                    <div className="flex items-center gap-1 text-[10px] font-mono">
+                      <span className="px-2 py-0.5 rounded-full bg-purple-400/10 text-purple-300/60 border border-purple-400/10">SaaS</span>
+                      <span className="px-2 py-0.5 rounded-full bg-blue-400/10 text-blue-300/60 border border-blue-400/10">Insurance</span>
+                      <span className="px-2 py-0.5 rounded-full bg-green-400/10 text-green-300/60 border border-green-400/10">MFG</span>
+                      <span className="px-2 py-0.5 rounded-full bg-yellow-400/10 text-yellow-300/60 border border-yellow-400/10">+40</span>
                     </div>
                   </div>
-                </div>
-              );
-            })()}
+                );
+              })()}
 
-            {/* 2 - Prism-Powered Notes */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="relative p-6 rounded-2xl border border-purple-400/15 bg-purple-400/[0.02] overflow-hidden transition-all duration-700 hover:border-purple-400/30" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "100ms" }}>
-                  <PrismIcon className="w-8 h-8 mb-3" />
-                  <h3 className="text-white font-bold text-lg mb-2">Prism-Powered Notes</h3>
-                  <p className="text-white/50 text-sm leading-relaxed mb-4">
-                    100K+ winning notes studied. Prism tells the Cleaner exactly what to ask - your messy thoughts become structured CRM gold, tuned to your industry.
-                  </p>
-                  <div className="flex items-center gap-1 text-[10px] font-mono">
-                    <span className="px-2 py-0.5 rounded-full bg-purple-400/10 text-purple-300/60 border border-purple-400/10">SaaS</span>
-                    <span className="px-2 py-0.5 rounded-full bg-blue-400/10 text-blue-300/60 border border-blue-400/10">Insurance</span>
-                    <span className="px-2 py-0.5 rounded-full bg-green-400/10 text-green-300/60 border border-green-400/10">MFG</span>
-                    <span className="px-2 py-0.5 rounded-full bg-yellow-400/10 text-yellow-300/60 border border-yellow-400/10">+40</span>
-                  </div>
-                </div>
-              );
-            })()}
-
-            {/* 3 - Visual CRM Notes: rich visual notebook */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="lg:col-span-2 relative p-5 rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "200ms" }}>
-                  <div className="flex items-center gap-2 mb-3">
-                    <svg className="w-5 h-5 text-green-400/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                    <h3 className="text-white font-bold text-lg">Visual CRM Notes</h3>
-                    <span className="text-white/20 text-xs ml-auto font-mono">not a wall of text</span>
-                  </div>
-                  {/* SVG visual notebook - polished, lines from node edges */}
-                  <svg className="w-full" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0" y="0" width="560" height="320" rx="12" fill="#050e1c" />
-                    {/* Grid dots - notebook feel */}
-                    {Array.from({length: 20}).map((_, r) => Array.from({length: 30}).map((_, c) => (
-                      <circle key={`${r}-${c}`} cx={18 + c * 18} cy={16 + r * 16} r="0.4" fill="white" opacity="0.06" />
-                    )))}
-
-                    {/* ═══ Connections: edge-to-edge from center ellipse to each node ═══ */}
-                    {/* Center→Austin (upper-left exit → right edge of rect) */}
-                    <path d="M228 85 C198 76 170 67 150 63" stroke="#80c540" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
-                    {/* Center→Hail risk (lower-left exit → upper-right edge of ellipse) */}
-                    <path d="M229 115 C198 126 160 138 122 146" stroke="#3b82f6" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
-                    {/* Center→Umbrella (bottom-left exit → top edge of rect) */}
-                    <path d="M262 131 C254 168 228 208 199 240" stroke="#f59e0b" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
-                    {/* Center→Hail comp (upper-right exit → left edge of rect) */}
-                    <path d="M332 86 C356 79 380 72 400 68" stroke="#F36464" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
-                    {/* Center→Inspection (lower-right exit → upper-left edge of ellipse) */}
-                    <path d="M328 118 C358 130 396 146 427 155" stroke="#14b8a6" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
-                    {/* Center→Prism (bottom-right exit → top edge of rect) */}
-                    <path d="M307 129 C328 168 382 218 420 250" stroke="#a855f7" strokeWidth="1.2" opacity="0.15" strokeLinecap="round" />
-
-                    {/* Cross-links between nodes - dashed, edge-to-edge */}
-                    {/* Austin bottom → Hail risk top */}
-                    <path d="M95 68 C90 95 84 120 80 138" stroke="white" strokeWidth="0.6" opacity="0.08" strokeDasharray="3 4" />
-                    {/* Hail comp bottom → Inspection top */}
-                    <path d="M470 73 C470 100 470 130 470 150" stroke="white" strokeWidth="0.6" opacity="0.08" strokeDasharray="3 4" />
-                    {/* Umbrella right → Prism left */}
-                    <path d="M245 259 C280 263 310 268 340 272" stroke="#a855f7" strokeWidth="0.6" opacity="0.1" strokeDasharray="3 4" />
-
-                    {/* ═══ CENTER: Thompson ═══ */}
-                    <ellipse cx="280" cy="100" rx="58" ry="32" fill="#80c540" fillOpacity="0.08" stroke="#80c540" strokeWidth="2" strokeDasharray="4 3" opacity="0.4" />
-                    <text x="280" y="96" textAnchor="middle" fill="#80c540" fontSize="15" fontWeight="bold" opacity="0.9" style={{fontFamily:"'Syne',sans-serif"}}>🏠 Thompson</text>
-                    <text x="280" y="114" textAnchor="middle" fill="#80c540" fontSize="9" opacity="0.4">Home + Auto · $4.2K</text>
-
-                    {/* ═══ Austin→Denver (top-left) ═══ */}
-                    <rect x="40" y="28" width="110" height="40" rx="8" fill="#80c540" fillOpacity="0.05" stroke="#80c540" strokeWidth="1" opacity="0.3" />
-                    <text x="95" y="46" textAnchor="middle" fill="white" fontSize="10" opacity="0.7">✈️ Austin→Denver</text>
-                    <text x="95" y="60" textAnchor="middle" fill="#80c540" fontSize="8" opacity="0.35">closing Mar 18</text>
-                    {/* ═══ Hail risk (left) ═══ */}
-                    <ellipse cx="75" cy="160" rx="60" ry="22" fill="#3b82f6" fillOpacity="0.05" stroke="#3b82f6" strokeWidth="1.2" opacity="0.3" />
-                    <text x="75" y="157" textAnchor="middle" fill="white" fontSize="11" opacity="0.7">⚡ Hail risk</text>
-                    <text x="75" y="172" textAnchor="middle" fill="#3b82f6" fontSize="7" opacity="0.3">prev claim TX</text>
-
-                    {/* ═══ Umbrella (bottom-left) ═══ */}
-                    <rect x="130" y="240" width="115" height="38" rx="19" fill="#f59e0b" fillOpacity="0.05" stroke="#f59e0b" strokeWidth="1.2" opacity="0.3" />
-                    <text x="188" y="256" textAnchor="middle" fill="white" fontSize="11" opacity="0.7">☂️ Umbrella $1M</text>
-                    <text x="188" y="270" textAnchor="middle" fill="#f59e0b" fontSize="8" opacity="0.3">bundle discount?</text>
-
-                    {/* ═══ Hail comp (top-right) ═══ */}
-                    <rect x="400" y="25" width="140" height="48" rx="8" fill="#F36464" fillOpacity="0.06" stroke="#F36464" strokeWidth="1.2" opacity="0.35" />
-                    <text x="470" y="43" textAnchor="middle" fill="#F36464" fontSize="10" fontWeight="bold" opacity="0.8">① Hail comp</text>
-                    <text x="470" y="58" textAnchor="middle" fill="#F36464" fontSize="8" opacity="0.4">📧 by Wednesday</text>
-
-                    {/* ═══ Inspection (mid-right) ═══ */}
-                    <ellipse cx="470" cy="172" rx="65" ry="22" fill="#14b8a6" fillOpacity="0.04" stroke="#14b8a6" strokeWidth="1" opacity="0.3" />
-                    <text x="470" y="169" textAnchor="middle" fill="white" fontSize="10" opacity="0.6">② Inspection 📋</text>
-                    <text x="470" y="183" textAnchor="middle" fill="#14b8a6" fontSize="7" opacity="0.3">photos or PDF</text>
-
-                    {/* ═══ Prism insight (bottom-right) ═══ */}
-                    <rect x="340" y="250" width="200" height="44" rx="8" fill="#a855f7" fillOpacity="0.04" stroke="#a855f7" strokeWidth="1" strokeDasharray="4 2" opacity="0.25" />
-                    <text x="440" y="268" textAnchor="middle" fill="#a855f7" fontSize="9" opacity="0.6">🔮 Prism: 48hr = 82% close</text>
-                    <text x="440" y="283" textAnchor="middle" fill="#a855f7" fontSize="7" opacity="0.3">prioritize hail comparison</text>
-                    <text x="545" y="262" fill="#a855f7" fontSize="8" opacity="0.12">✨</text>
-
-                    {/* Junction dots at center ellipse edge exits */}
-                    <circle cx="228" cy="85" r="2.5" fill="#80c540" opacity="0.3" />
-                    <circle cx="229" cy="115" r="2.5" fill="#3b82f6" opacity="0.25" />
-                    <circle cx="262" cy="131" r="2.5" fill="#f59e0b" opacity="0.25" />
-                    <circle cx="332" cy="86" r="2.5" fill="#F36464" opacity="0.3" />
-                    <circle cx="328" cy="118" r="2.5" fill="#14b8a6" opacity="0.25" />
-                    <circle cx="307" cy="129" r="2.5" fill="#a855f7" opacity="0.2" />
-                  </svg>
-                </div>
-              );
-            })()}
-
-            {/* 4 - One Button */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/20 flex flex-col" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "300ms" }}>
-                  <h3 className="text-white font-bold text-lg mb-2">One Button. That's It.</h3>
-                  <p className="text-white/50 text-sm leading-relaxed mb-2">
-                    No loading, no waiting. After an in-person meeting, press and talk. For virtual meetings, AI REV joins the call and handles the rest automatically.
-                  </p>
-                  <div className="flex-1 flex flex-col items-center justify-center py-6">
-                    <div className="relative w-24 h-24 rounded-full flex items-center justify-center" style={{ background: "radial-gradient(circle, #1a8720 0%, #0f5e14 60%, #0a3d0a 100%)", boxShadow: "0 0 30px rgba(128,197,64,0.15)" }}>
-                      <BroomOnlyIcon className="w-10 h-10" />
+              {/* 3 - Visual CRM Notes: rich visual notebook */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="lg:col-span-2 relative p-5 rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "200ms" }}>
+                    <div className="flex items-center gap-2 mb-3">
+                      <svg className="w-5 h-5 text-green-400/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      <h3 className="text-white font-bold text-lg">Visual CRM Notes</h3>
+                      <span className="text-white/20 text-xs ml-auto font-mono">not a wall of text</span>
                     </div>
-                    <p className="mt-3 text-green-400/50 text-[10px] font-mono tracking-wider">tap → talk → done</p>
-                  </div>
-                </div>
-              );
-            })()}
+                    {/* SVG visual notebook - polished, lines from node edges */}
+                    <svg className="w-full" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0" y="0" width="560" height="320" rx="12" fill="#050e1c" />
+                      {/* Grid dots - notebook feel */}
+                      {Array.from({ length: 20 }).map((_, r) => Array.from({ length: 30 }).map((_, c) => (
+                        <circle key={`${r}-${c}`} cx={18 + c * 18} cy={16 + r * 16} r="0.4" fill="white" opacity="0.06" />
+                      )))}
 
-            {/* 5 - The Enforcer */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="relative p-6 rounded-2xl border border-yellow-400/10 bg-yellow-400/[0.01] overflow-hidden transition-all duration-700 hover:border-yellow-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "400ms" }}>
-                  <svg className="w-8 h-8 mb-3 text-yellow-400/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  <h3 className="text-white font-bold text-lg mb-2">The Enforcer</h3>
-                  <p className="text-white/50 text-sm leading-relaxed mb-3">
-                    Missed a follow-up? Already noticed. Deadline creeping? You'll get pinged. Still too busy? The email gets drafted and shown for approval.
-                  </p>
-                  <div className="space-y-1.5 text-[11px]">
-                    <div className="flex items-center gap-2"><span className="text-green-400">✓</span><span className="text-white/30 line-through">Send proposal to Acme</span></div>
-                    <div className="flex items-center gap-2"><span className="text-yellow-400 animate-pulse">!</span><span className="text-yellow-300/50">Follow up with Thompson - due today</span></div>
-                    <div className="flex items-center gap-2"><span className="text-white/15">○</span><span className="text-white/25">Schedule demo with NovaTech</span></div>
-                  </div>
-                </div>
-              );
-            })()}
+                      {/* ═══ Connections: edge-to-edge from center ellipse to each node ═══ */}
+                      {/* Center→Austin (upper-left exit → right edge of rect) */}
+                      <path d="M228 85 C198 76 170 67 150 63" stroke="#80c540" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                      {/* Center→Hail risk (lower-left exit → upper-right edge of ellipse) */}
+                      <path d="M229 115 C198 126 160 138 122 146" stroke="#3b82f6" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                      {/* Center→Umbrella (bottom-left exit → top edge of rect) */}
+                      <path d="M262 131 C254 168 228 208 199 240" stroke="#f59e0b" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                      {/* Center→Hail comp (upper-right exit → left edge of rect) */}
+                      <path d="M332 86 C356 79 380 72 400 68" stroke="#F36464" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                      {/* Center→Inspection (lower-right exit → upper-left edge of ellipse) */}
+                      <path d="M328 118 C358 130 396 146 427 155" stroke="#14b8a6" strokeWidth="1.5" opacity="0.2" strokeLinecap="round" />
+                      {/* Center→Prism (bottom-right exit → top edge of rect) */}
+                      <path d="M307 129 C328 168 382 218 420 250" stroke="#a855f7" strokeWidth="1.2" opacity="0.15" strokeLinecap="round" />
 
-            {/* 6 - CRM Autopush */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="lg:col-span-2 relative p-6 rounded-2xl border border-green-400/10 bg-green-400/[0.01] overflow-hidden transition-all duration-700 hover:border-green-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "450ms" }}>
-                  <div className="flex flex-col sm:flex-row gap-5">
-                    <div className="flex-1">
-                      <svg className="w-8 h-8 mb-3 text-green-400/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
-                      <h3 className="text-white font-bold text-lg mb-2">CRM Autopush</h3>
-                      <p className="text-white/50 text-sm leading-relaxed">
-                        No copy-paste. No tabbing between screens. The meeting ends, the note lands in your CRM - structured, tagged, and field-mapped. Salesforce, HubSpot, you name it.
-                      </p>
-                    </div>
-                    <div className="sm:w-52 flex-shrink-0 bg-gray-950/60 rounded-xl p-3 border border-white/5 space-y-2 text-[10px]">
-                      <p className="text-white/25 font-mono tracking-wider uppercase">Auto-mapped</p>
-                      <div className="flex items-center justify-between"><span className="text-white/30">Contact</span><span className="text-green-400/60">Thompson, J.</span></div>
-                      <div className="flex items-center justify-between"><span className="text-white/30">Stage</span><span className="text-green-400/60">Proposal Sent</span></div>
-                      <div className="flex items-center justify-between"><span className="text-white/30">Next Step</span><span className="text-yellow-400/60">Hail comp by Wed</span></div>
-                      <div className="flex items-center justify-between"><span className="text-white/30">Deal Value</span><span className="text-green-400/60">$4,200</span></div>
-                      <div className="flex items-center justify-between"><span className="text-white/30">Sentiment</span><span className="text-green-400/60">Warm ↑</span></div>
+                      {/* Cross-links between nodes - dashed, edge-to-edge */}
+                      {/* Austin bottom → Hail risk top */}
+                      <path d="M95 68 C90 95 84 120 80 138" stroke="white" strokeWidth="0.6" opacity="0.08" strokeDasharray="3 4" />
+                      {/* Hail comp bottom → Inspection top */}
+                      <path d="M470 73 C470 100 470 130 470 150" stroke="white" strokeWidth="0.6" opacity="0.08" strokeDasharray="3 4" />
+                      {/* Umbrella right → Prism left */}
+                      <path d="M245 259 C280 263 310 268 340 272" stroke="#a855f7" strokeWidth="0.6" opacity="0.1" strokeDasharray="3 4" />
+
+                      {/* ═══ CENTER: Thompson ═══ */}
+                      <ellipse cx="280" cy="100" rx="58" ry="32" fill="#80c540" fillOpacity="0.08" stroke="#80c540" strokeWidth="2" strokeDasharray="4 3" opacity="0.4" />
+                      <text x="280" y="96" textAnchor="middle" fill="#80c540" fontSize="13" fontWeight="bold" opacity="0.9" style={{ fontFamily: "'Syne',sans-serif" }}>🏠 Thompson</text>
+                      <text x="280" y="114" textAnchor="middle" fill="#80c540" fontSize="9" opacity="0.4">Home + Auto · $4.2K</text>
+
+                      {/* ═══ Austin→Denver (top-left) ═══ */}
+                      <rect x="40" y="28" width="110" height="40" rx="8" fill="#80c540" fillOpacity="0.05" stroke="#80c540" strokeWidth="1" opacity="0.3" />
+                      <text x="95" y="46" textAnchor="middle" fill="white" fontSize="10" opacity="0.7">✈️ Austin→Denver</text>
+                      <text x="95" y="60" textAnchor="middle" fill="#80c540" fontSize="8" opacity="0.35">closing Mar 18</text>
+                      {/* ═══ Hail risk (left) ═══ */}
+                      <ellipse cx="75" cy="160" rx="60" ry="22" fill="#3b82f6" fillOpacity="0.05" stroke="#3b82f6" strokeWidth="1.2" opacity="0.3" />
+                      <text x="75" y="157" textAnchor="middle" fill="white" fontSize="11" opacity="0.7">⚡ Hail risk</text>
+                      <text x="75" y="172" textAnchor="middle" fill="#3b82f6" fontSize="7" opacity="0.3">prev claim TX</text>
+
+                      {/* ═══ Umbrella (bottom-left) ═══ */}
+                      <rect x="130" y="240" width="115" height="38" rx="19" fill="#f59e0b" fillOpacity="0.05" stroke="#f59e0b" strokeWidth="1.2" opacity="0.3" />
+                      <text x="188" y="256" textAnchor="middle" fill="white" fontSize="11" opacity="0.7">☂️ Umbrella $1M</text>
+                      <text x="188" y="270" textAnchor="middle" fill="#f59e0b" fontSize="8" opacity="0.3">bundle discount?</text>
+
+                      {/* ═══ Hail comp (top-right) ═══ */}
+                      <rect x="400" y="25" width="140" height="48" rx="8" fill="#F36464" fillOpacity="0.06" stroke="#F36464" strokeWidth="1.2" opacity="0.35" />
+                      <text x="470" y="43" textAnchor="middle" fill="#F36464" fontSize="10" fontWeight="bold" opacity="0.8">① Hail comp</text>
+                      <text x="470" y="58" textAnchor="middle" fill="#F36464" fontSize="8" opacity="0.4">📧 by Wednesday</text>
+
+                      {/* ═══ Inspection (mid-right) ═══ */}
+                      <ellipse cx="470" cy="172" rx="65" ry="22" fill="#14b8a6" fillOpacity="0.04" stroke="#14b8a6" strokeWidth="1" opacity="0.3" />
+                      <text x="470" y="169" textAnchor="middle" fill="white" fontSize="10" opacity="0.6">② Inspection 📋</text>
+                      <text x="470" y="183" textAnchor="middle" fill="#14b8a6" fontSize="7" opacity="0.3">photos or PDF</text>
+
+                      {/* ═══ Prism insight (bottom-right) ═══ */}
+                      <rect x="340" y="250" width="200" height="44" rx="8" fill="#a855f7" fillOpacity="0.04" stroke="#a855f7" strokeWidth="1" strokeDasharray="4 2" opacity="0.25" />
+                      <text x="440" y="268" textAnchor="middle" fill="#a855f7" fontSize="9" opacity="0.6">🔮 Prism: 48hr = 82% close</text>
+                      <text x="440" y="283" textAnchor="middle" fill="#a855f7" fontSize="7" opacity="0.3">prioritize hail comparison</text>
+                      <text x="545" y="262" fill="#a855f7" fontSize="8" opacity="0.12">✨</text>
+
+                      {/* Junction dots at center ellipse edge exits */}
+                      <circle cx="228" cy="85" r="2.5" fill="#80c540" opacity="0.3" />
+                      <circle cx="229" cy="115" r="2.5" fill="#3b82f6" opacity="0.25" />
+                      <circle cx="262" cy="131" r="2.5" fill="#f59e0b" opacity="0.25" />
+                      <circle cx="332" cy="86" r="2.5" fill="#F36464" opacity="0.3" />
+                      <circle cx="328" cy="118" r="2.5" fill="#14b8a6" opacity="0.25" />
+                      <circle cx="307" cy="129" r="2.5" fill="#a855f7" opacity="0.2" />
+                    </svg>
+                  </div>
+                );
+              })()}
+
+              {/* 4 - One Button */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/20 flex flex-col" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "300ms" }}>
+                    <h3 className="text-white font-bold text-lg mb-2">One Button. That's It.</h3>
+                    <p className="text-white/50 text-sm leading-relaxed mb-2">
+                      No loading, no waiting. After an in-person meeting, press and talk. For virtual meetings, AI REV joins the call and handles the rest automatically.
+                    </p>
+                    <div className="flex-1 flex flex-col items-center justify-center py-6">
+                      <div className="relative w-24 h-24 rounded-full flex items-center justify-center" style={{ background: "radial-gradient(circle, #1a8720 0%, #0f5e14 60%, #0a3d0a 100%)", boxShadow: "0 0 30px rgba(128,197,64,0.15)", fontSize: '40px' }}>
+                        <svg className="w-10 h-10 text-green-400" fill="none" viewBox="0 0 24 24" stroke="white">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                      </div>
+                      <p className="mt-3 text-green-400/50 text-[10px] font-mono tracking-wider">tap → talk → done</p>
                     </div>
                   </div>
-                </div>
-              );
-            })()}
+                );
+              })()}
 
-            {/* 7 - The Colleague Who Knows Everything: full width */}
-            {(() => {
-              const [ref, inView] = useInView(0.1);
-              return (
-                <div ref={ref} className="sm:col-span-2 lg:col-span-3 relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "500ms" }}>
-                  <div className="flex flex-col sm:flex-row items-start gap-5">
-                    <div className="flex-1">
-                      <div className="text-xl mb-2">☕</div>
-                      <h3 className="text-white font-bold text-lg mb-2">The Colleague Who Knows Everything</h3>
-                      <p className="text-white/50 text-sm leading-relaxed">
-                        AI REV isn't just about notes. It keeps you briefed - upcoming meetings, who's involved, what was said last time,
-                        company events, team wins, pipeline shifts. Every level of the silo is covered, so you never walk into a room cold.
-                      </p>
-                    </div>
-                    <div className="sm:w-56 flex-shrink-0 bg-gray-950/60 rounded-xl p-3 border border-white/5 space-y-2 text-[10px]">
-                      <p className="text-white/25 font-mono tracking-wider uppercase">Today's Intel</p>
-                      <div className="flex items-start gap-2 text-white/40"><span className="text-blue-400/60 mt-0.5">●</span> <span>Meeting with <span className="text-white/60">Acme Corp</span> at 2pm - Sarah mentioned budget freeze last time</span></div>
-                      <div className="flex items-start gap-2 text-white/40"><span className="text-green-400/60 mt-0.5">●</span> <span><span className="text-white/60">Mike T.</span> closed DataDrive - team high-five</span></div>
-                      <div className="flex items-start gap-2 text-white/40"><span className="text-yellow-400/60 mt-0.5">●</span> <span>Company all-hands moved to Thursday 3pm</span></div>
+              {/* 5 - The Enforcer */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="relative p-6 rounded-2xl border border-yellow-400/10 bg-yellow-400/[0.01] overflow-hidden transition-all duration-700 hover:border-yellow-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "400ms" }}>
+                    <svg className="w-8 h-8 mb-3 text-yellow-400/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h3 className="text-white font-bold text-lg mb-2">The Enforcer</h3>
+                    <p className="text-white/50 text-sm leading-relaxed mb-3">
+                      Missed a follow-up? Already noticed. Deadline creeping? You'll get pinged. Still too busy? The email gets drafted and shown for approval.
+                    </p>
+                    <div className="space-y-1.5 text-[11px]">
+                      <div className="flex items-center gap-2"><span className="text-green-400">✓</span><span className="text-white/30 line-through">Send proposal to Acme</span></div>
+                      <div className="flex items-center gap-2"><span className="text-yellow-400 animate-pulse">!</span><span className="text-yellow-300/50">Follow up with Thompson - due today</span></div>
+                      <div className="flex items-center gap-2"><span className="text-white/15">○</span><span className="text-white/25">Schedule demo with NovaTech</span></div>
                     </div>
                   </div>
-                </div>
-              );
-            })()}
+                );
+              })()}
 
+              {/* 6 - CRM Autopush */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="lg:col-span-2 relative p-6 rounded-2xl border border-green-400/10 bg-green-400/[0.01] overflow-hidden transition-all duration-700 hover:border-green-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "450ms" }}>
+                    <div className="flex flex-col sm:flex-row gap-5">
+                      <div className="flex-1">
+                        <svg className="w-8 h-8 mb-3 text-green-400/70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
+                        <h3 className="text-white font-bold text-lg mb-2">CRM Autopush</h3>
+                        <p className="text-white/50 text-sm leading-relaxed">
+                          No copy-paste. No tabbing between screens. The meeting ends, the note lands in your CRM - structured, tagged, and field-mapped. Salesforce, HubSpot, you name it.
+                        </p>
+                      </div>
+                      <div className="sm:w-52 flex-shrink-0 bg-gray-950/60 rounded-xl p-3 border border-white/5 space-y-2 text-[10px]">
+                        <p className="text-white/25 font-mono tracking-wider uppercase">Auto-mapped</p>
+                        <div className="flex items-center justify-between"><span className="text-white/30">Contact</span><span className="text-green-400/60">Thompson, J.</span></div>
+                        <div className="flex items-center justify-between"><span className="text-white/30">Stage</span><span className="text-green-400/60">Proposal Sent</span></div>
+                        <div className="flex items-center justify-between"><span className="text-white/30">Next Step</span><span className="text-yellow-400/60">Hail comp by Wed</span></div>
+                        <div className="flex items-center justify-between"><span className="text-white/30">Deal Value</span><span className="text-green-400/60">$4,200</span></div>
+                        <div className="flex items-center justify-between"><span className="text-white/30">Sentiment</span><span className="text-green-400/60">Warm ↑</span></div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
+              {/* 7 - The Colleague Who Knows Everything: full width */}
+              {(() => {
+                const [ref, inView] = useInView(0.1);
+                return (
+                  <div ref={ref} className="sm:col-span-2 lg:col-span-3 relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden transition-all duration-700 hover:border-green-400/20" style={{ opacity: inView ? 1 : 0, transform: inView ? "translateY(0)" : "translateY(40px)", transitionDelay: "500ms" }}>
+                    <div className="flex flex-col sm:flex-row items-start gap-5">
+                      <div className="flex-1">
+                        <div className="text-xl mb-2">☕</div>
+                        <h3 className="text-white font-bold text-lg mb-2">The Colleague Who Knows Everything</h3>
+                        <p className="text-white/50 text-sm leading-relaxed">
+                          AI REV isn't just about notes. It keeps you briefed - upcoming meetings, who's involved, what was said last time,
+                          company events, team wins, pipeline shifts. Every level of the silo is covered, so you never walk into a room cold.
+                        </p>
+                      </div>
+                      <div className="sm:w-56 flex-shrink-0 bg-gray-950/60 rounded-xl p-3 border border-white/5 space-y-2 text-[10px]">
+                        <p className="text-white/25 font-mono tracking-wider uppercase">Today's Intel</p>
+                        <div className="flex items-start gap-2 text-white/40"><span className="text-blue-400/60 mt-0.5">●</span> <span>Meeting with <span className="text-white/60">Acme Corp</span> at 2pm - Sarah mentioned budget freeze last time</span></div>
+                        <div className="flex items-start gap-2 text-white/40"><span className="text-green-400/60 mt-0.5">●</span> <span><span className="text-white/60">Mike T.</span> closed DataDrive - team high-five</span></div>
+                        <div className="flex items-start gap-2 text-white/40"><span className="text-yellow-400/60 mt-0.5">●</span> <span>Company all-hands moved to Thursday 3pm</span></div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
 
-      {/* ── PERSONALIZATION ── */}
-      <section ref={persRef} className="relative py-32 px-6 overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }} />
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-3">Adaptive Intelligence</p>
+        {/* ── PERSONALIZATION ── */}
+        <section ref={persRef} className="relative py-32 px-6 overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.03]" style={{
+            backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }} />
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center mb-16">
+              <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-3">Adaptive Intelligence</p>
+              <h2
+                className="text-4xl sm:text-5xl font-bold tracking-tight"
+                style={{
+                  fontFamily: "'Syne', sans-serif",
+                  opacity: persInView ? 1 : 0,
+                  transform: persInView ? "translateY(0)" : "translateY(30px)",
+                  transition: "all 0.8s ease",
+                }}
+              >
+                Everything gets remembered.
+                <br />
+                <span className="text-white/40">About <em>you</em>.</span>
+              </h2>
+              <p className="text-white/40 text-base mt-5 max-w-2xl mx-auto leading-relaxed">
+                AI REV doesn't treat every rep the same. Your style, your pace, your quirks - all learned and
+                adapted to. Like a cleaning crew that knows exactly where you leave the mess every time.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <FeatureCard
+                delay={0}
+                icon="🧬"
+                title="Your Voice Profile"
+                desc="A profile gets built over time - how you talk, what details you skip, where you rush. Questions adjust to fill your specific gaps."
+              />
+              <FeatureCard
+                delay={100}
+                icon="🎧"
+                title="Tailored Tone & Pace"
+                desc="Prefer quick bullet debriefs? The pace picks up. Love to think out loud? You ramble, it gets structured. Your rhythm, AI REV's format."
+              />
+              <FeatureCard
+                delay={200}
+                icon="🗂️"
+                title="Deal Context Memory"
+                desc="Your pipeline is remembered. 'How did the follow-up with Thompson go?' - already known: who that is, what was discussed, and what was promised."
+              />
+              <FeatureCard
+                delay={300}
+                icon="🔄"
+                title="Continuous Calibration"
+                desc="Every conversation sharpens the system. If you close more deals when budget comes up early - it starts happening automatically."
+              />
+              <FeatureCard
+                delay={400}
+                icon="🌡️"
+                title="Mood-Aware"
+                desc="Had a rough meeting? It gets picked up on. No bombardment with 20 questions - just the essentials, then you move on. Emotional intelligence, calibrated."
+              />
+              <FeatureCard
+                delay={500}
+                icon="🏗️"
+                title="Silo-Level Depth"
+                desc="Like the levels of a silo, it goes deeper the longer you work together. Week one: basic notes. Month three: a strategic partner that knows your entire book of business."
+              />
+            </div>
+          </div>
+        </section>
+
+
+        {/* ── CTA ── */}
+        <section id="cta" className="relative py-32 px-6 overflow-hidden">
+          <Sparkles />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-400/[0.03] to-transparent" />
+          <div className="max-w-3xl mx-auto text-center relative z-10">
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <BroomOnlyIcon className="w-14 h-14" style={{ animation: "sweep 2s ease-in-out infinite" }} />
+              <span className="text-white/15 text-3xl font-thin">+</span>
+              <PrismIcon className="w-14 h-14" />
+            </div>
             <h2
-              className="text-4xl sm:text-5xl font-extrabold tracking-tight"
-              style={{
-                fontFamily: "'Syne', sans-serif",
-                opacity: persInView ? 1 : 0,
-                transform: persInView ? "translateY(0)" : "translateY(30px)",
-                transition: "all 0.8s ease",
-              }}
+              className="text-4xl sm:text-6xl font-bold tracking-tight mb-6"
+              style={{ fontFamily: "'Syne', sans-serif" }}
             >
-              Everything gets remembered.
+              Ready for a
               <br />
-              <span className="text-white/40">About <em>you</em>.</span>
+              <span className="shimmer-text">spotless pipeline?</span>
             </h2>
-            <p className="text-white/40 text-base mt-5 max-w-2xl mx-auto leading-relaxed">
-              AI REV doesn't treat every rep the same. Your style, your pace, your quirks - all learned and
-              adapted to. Like a cleaning crew that knows exactly where you leave the mess every time.
+            <p className="text-white/45 text-lg mb-10 max-w-xl mx-auto">
+              Become a Design Partner. Get free access, shape the product, and give your team an unfair advantage.
             </p>
+
+            <button
+              onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
+              className="px-10 py-4 text-lg font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/25 hover:scale-105"
+              style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
+            >
+              Join the Study
+            </button>
           </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <FeatureCard
-              delay={0}
-              icon="🧬"
-              title="Your Voice Profile"
-              desc="A profile gets built over time - how you talk, what details you skip, where you rush. Questions adjust to fill your specific gaps."
-            />
-            <FeatureCard
-              delay={100}
-              icon="🎧"
-              title="Tailored Tone & Pace"
-              desc="Prefer quick bullet debriefs? The pace picks up. Love to think out loud? You ramble, it gets structured. Your rhythm, AI REV's format."
-            />
-            <FeatureCard
-              delay={200}
-              icon="🗂️"
-              title="Deal Context Memory"
-              desc="Your pipeline is remembered. 'How did the follow-up with Thompson go?' - already known: who that is, what was discussed, and what was promised."
-            />
-            <FeatureCard
-              delay={300}
-              icon="🔄"
-              title="Continuous Calibration"
-              desc="Every conversation sharpens the system. If you close more deals when budget comes up early - it starts happening automatically."
-            />
-            <FeatureCard
-              delay={400}
-              icon="🌡️"
-              title="Mood-Aware"
-              desc="Had a rough meeting? It gets picked up on. No bombardment with 20 questions - just the essentials, then you move on. Emotional intelligence, calibrated."
-            />
-            <FeatureCard
-              delay={500}
-              icon="🏗️"
-              title="Silo-Level Depth"
-              desc="Like the levels of a silo, it goes deeper the longer you work together. Week one: basic notes. Month three: a strategic partner that knows your entire book of business."
-            />
-          </div>
-        </div>
-      </section>
-
-
-      {/* ── CTA ── */}
-      <section id="cta" className="relative py-32 px-6 overflow-hidden">
-        <Sparkles />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-400/[0.03] to-transparent" />
-        <div className="max-w-3xl mx-auto text-center relative z-10">
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <BroomOnlyIcon className="w-14 h-14" style={{ animation: "sweep 2s ease-in-out infinite" }} />
-            <span className="text-white/15 text-3xl font-thin">+</span>
-            <PrismIcon className="w-14 h-14" />
-          </div>
-          <h2
-            className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6"
-            style={{ fontFamily: "'Syne', sans-serif" }}
-          >
-            Ready for a
-            <br />
-            <span className="shimmer-text">spotless pipeline?</span>
-          </h2>
-          <p className="text-white/45 text-lg mb-10 max-w-xl mx-auto">
-            Become a Design Partner. Get free access, shape the product, and give your team an unfair advantage.
-          </p>
-
-          <button
-            onClick={() => { setPage("partner"); window.scrollTo(0, 0); }}
-            className="px-10 py-4 text-lg font-bold rounded-full text-gray-950 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/25 hover:scale-105"
-            style={{ background: "linear-gradient(135deg, #80c540, #1a8720)" }}
-          >
-            Join the Study
-          </button>
-        </div>
-      </section>
+        </section>
       </div>
 
       {page === "partner" && (
@@ -1349,7 +1359,7 @@ export default function AIRevLanding() {
             <div className="text-center mb-16">
               <p className="text-green-400 text-xs font-mono tracking-widest uppercase mb-4">Design Partner Program</p>
               <h1
-                className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-6"
+                className="text-4xl sm:text-5xl font-bold tracking-tight mb-6"
                 style={{ fontFamily: "'Syne', sans-serif" }}
               >
                 Shape the future of
@@ -1451,11 +1461,10 @@ export default function AIRevLanding() {
       <footer className="border-t border-white/5 py-12 px-6">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <BroomOnlyIcon className="w-5 h-5" />
+            <img src={PrismLogo} alt="Prism Logo" className="w-5 h-5" />
             <span className="text-sm font-bold" style={{ fontFamily: "'Syne', sans-serif" }}>
               AI <span className="text-green-400">REV</span>
             </span>
-            <span className="text-white/20 text-xs ml-2">Voice</span>
           </div>
           <p className="text-white/15 text-xs font-mono">© 2026 AI REV. Clean data, clean deals.</p>
         </div>
